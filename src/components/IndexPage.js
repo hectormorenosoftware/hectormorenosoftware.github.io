@@ -14,7 +14,7 @@ import ccLogo from "../images/cardconnect.jpeg";
 import comcastLogo from "../images/comcast.jpeg";
 import hexagonLogo from "../images/hexagonusfederal.jpeg";
 import travelersLogo from "../images/travelers.png";
-import paramountLogo from "../images/paramountlogo.jpeg";
+import paramountLogo from "../images/paramount.png";
 
 class IndexPage extends React.PureComponent {
   render() {
