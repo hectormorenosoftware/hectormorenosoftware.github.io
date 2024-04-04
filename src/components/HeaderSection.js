@@ -29,7 +29,7 @@ class Header extends React.PureComponent {
         <div className="HeaderGroup">
           <a href="#companies">Companies</a>
           <a href="#about">About</a>
-          <a href="#creative-work">Creative Work</a>
+          <a href="#creative-work">Linked In</a>
         </div>
       </div>
     );
