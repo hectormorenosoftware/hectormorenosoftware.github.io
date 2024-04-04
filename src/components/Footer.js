@@ -16,7 +16,7 @@ const Text = styled.p`
   text-align: center;
 `;
 const Button = styled.button`
-  background: linear-gradient(102.24deg, #56ccf2 0%, #3436e7 100%);
+  background: #0a66c2;
   box-shadow: 0px 10px 20px rgba(101, 41, 255, 0.15);
   border-radius: 30px;
   color: white;
