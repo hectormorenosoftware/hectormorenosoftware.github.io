@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import "./Header.css";
 
 class Header extends React.PureComponent {
@@ -9,6 +9,10 @@ class Header extends React.PureComponent {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = () => {
@@ -21,6 +25,12 @@ class Header extends React.PureComponent {
     }
   };
 
+  goToContactPage = () => {
+    const { history } = this.props;
+
+    history.push("/contact");
+  };
+
   render() {
     return (
       <div
@@ -29,11 +39,14 @@ class Header extends React.PureComponent {
         <div className="HeaderGroup">
           <a href="#companies">Companies</a>
           <a href="#about">About</a>
-          <a href="#creative-work">Linked In</a>
+          <a href="#linked-in">Linked In</a>
+          <a style={{ cursor: "pointer" }} onClick={this.goToContactPage}>
+            Contact
+          </a>
         </div>
       </div>
     );
   }
 }
 
-export default Header;
+export default withRouter(Header);

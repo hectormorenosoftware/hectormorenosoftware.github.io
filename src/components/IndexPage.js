@@ -55,7 +55,7 @@ class IndexPage extends React.PureComponent {
             text="I'm a Full Stack Software Developer that specializes in HTML5, CSS3, SASS, JavaScript, JSX, React JS, Redux, Node JS, Express JS, AWS, MySQL, PostgreSQL, and Mongo DB."
           />
         </section>
-        <section id="creative-work">
+        <section id="linked-in">
           <Footer />
         </section>
       </div>
