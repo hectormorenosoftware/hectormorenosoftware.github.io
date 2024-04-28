@@ -23,6 +23,13 @@ class IndexPage extends React.PureComponent {
         <Header />
         <div className="Hero">
           <div className="HeroGroup">
+            <video
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              src="https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/workvideo.mp4"
+            />
+
             <h1>
               Welcome <br />
               to my website
