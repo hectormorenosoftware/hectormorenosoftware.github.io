@@ -54,7 +54,7 @@ class Contact extends React.Component {
               hectormorenosoftware@gmail.com
             </a>
             or call me at
-            <a href="tel:+415-212-0456">415-212-0456</a>
+            <a href="tel:4152120456">415-212-0456</a>
           </p>
         </div>
       </div>
