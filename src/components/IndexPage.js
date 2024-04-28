@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 import Section from "./Section";
-import Wave from "./Wave";
 import Header from "./HeaderSection";
 import Footer from "./Footer";
 import studioReact from "../images/logo-react.png";
@@ -35,7 +34,6 @@ class IndexPage extends React.PureComponent {
               to my website
             </h1>
             <p>Please scroll down to see the companies I have worked for</p>
-            <Wave />
           </div>
         </div>
         <section id="companies">

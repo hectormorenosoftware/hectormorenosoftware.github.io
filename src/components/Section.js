@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Wave from "./Wave";
-
 const SectionGroup = styled.div`
   background-color: black;
   height: 720px;
@@ -64,12 +62,6 @@ const WaveTop = styled.div`
 
 const Section = (props) => (
   <SectionGroup image={props.image}>
-    <WaveTop>
-      <Wave />
-    </WaveTop>
-    <WaveBottom>
-      <Wave />
-    </WaveBottom>
     <SectionLogo src={props.logo} />
     <SectionTitleGroup>
       <SectionTitle>{props.title}</SectionTitle>
