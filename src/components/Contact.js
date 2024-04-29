@@ -33,7 +33,7 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div className="Hero">
+      <div className="HeroContact">
         <div
           style={{
             display: "flex",
@@ -43,8 +43,8 @@ class Contact extends React.Component {
             padding: "20px 20px 20px 20px",
           }}
         >
-          <h1>Contact</h1>
           <Button onClick={this.goBack}>Go Back</Button>
+          <h1>Contact</h1>
           <p style={{ textAlign: "center" }}>
             Please contact me through email at
             <a
@@ -54,7 +54,7 @@ class Contact extends React.Component {
               hectormorenosoftware@gmail.com
             </a>
             or call me at
-            <a href="tel:4152120456">415-212-0456</a>
+            <a href="tel:4152120456">415-212-0456</a>.
           </p>
         </div>
       </div>

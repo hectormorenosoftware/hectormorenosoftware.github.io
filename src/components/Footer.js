@@ -6,6 +6,9 @@ const FooterGroup = styled.div`
   padding: 50px 0;
   display: grid;
   grid-gap: 20px;
+  position: absolute;
+  width: 100%;
+  height: 20%;
 `;
 const Text = styled.p`
   font-size: 24px;
@@ -27,6 +30,8 @@ const Button = styled.button`
   justify-self: center;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
+  width: 25rem;
+  height: 4rem;
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
