@@ -61,7 +61,7 @@ const WaveTop = styled.div`
 `;
 
 const Section = (props) => (
-  <SectionGroup image={props.image}>
+  <SectionGroup image={null}>
     <SectionLogo src={props.logo} />
     <SectionTitleGroup>
       <SectionTitle>{props.title}</SectionTitle>
