@@ -4,7 +4,6 @@ import Section from "./Section";
 import Header from "./HeaderSection";
 import Footer from "./Footer";
 import studioReact from "../images/logo-react.png";
-import codeTwo from "../images/codeagain.jpeg";
 import amexLogo from "../images/amex.png";
 import appleLogo from "../images/applecomputers.jpg";
 import dhLogo from "../images/dh.jpg";
