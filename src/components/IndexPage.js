@@ -1,4 +1,7 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import Card from "./Card";
 import Section from "./Section";
 import Header from "./HeaderSection";
@@ -14,8 +17,42 @@ import hexagonLogo from "../images/hexagonusfederal.jpeg";
 import travelersLogo from "../images/travelers.png";
 import paramountLogo from "../images/paramount.png";
 
+function getAPIMOCKDATA() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve([
+        { name: "Sakura", lastName: "Hatori", age: "32" },
+        { name: "Haturo", lastName: "San", age: "33" },
+      ]);
+    }, 1000);
+  });
+}
+
+function getDataThunk() {
+  return async function (dispatch) {
+    dispatch({ type: "GET_DATA" });
+
+    try {
+      const data = await getAPIMOCKDATA();
+
+      return dispatch({ type: "GET_DATA_SUCCESS", payload: data });
+    } catch (error) {
+      dispatch({ type: "GET_DATA_ERROR" });
+      throw new Error(error);
+    }
+  };
+}
+
 class IndexPage extends React.PureComponent {
+  componentDidMount() {
+    this.props.getDataIndexPage();
+  }
   render() {
+    console.log(this.props.data, "data array example");
+    console.log(
+      this.props,
+      "important tools to navigate through web application"
+    );
     return (
       <div>
         <Header />
@@ -66,4 +103,16 @@ class IndexPage extends React.PureComponent {
   }
 }
 
-export default IndexPage;
+function mapStateToProps(state) {
+  return {
+    data: state.paymentReducer.data,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return { getDataIndexPage: bindActionCreators(getDataThunk, dispatch) };
+}
+
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(IndexPage)
+);
