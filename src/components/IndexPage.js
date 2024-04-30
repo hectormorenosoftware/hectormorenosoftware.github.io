@@ -24,7 +24,7 @@ function getAPIMOCKDATA() {
         { name: "Sakura", lastName: "Hatori", age: "32" },
         { name: "Haturo", lastName: "San", age: "33" },
       ]);
-    }, 1000);
+    }, 5000);
   });
 }
 
@@ -48,11 +48,18 @@ class IndexPage extends React.PureComponent {
     this.props.getDataIndexPage();
   }
   render() {
-    console.log(this.props.data, "data array example");
-    console.log(
-      this.props,
-      "important tools to navigate through web application"
-    );
+    const { loading } = this.props;
+
+    if (loading === true) {
+      return (
+        <div className="Hero">
+          <div className="HeroGroup">
+            <p>Loading please wait ...</p>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div>
         <Header />
@@ -106,6 +113,7 @@ class IndexPage extends React.PureComponent {
 function mapStateToProps(state) {
   return {
     data: state.paymentReducer.data,
+    loading: state.paymentReducer.loading,
   };
 }
 
