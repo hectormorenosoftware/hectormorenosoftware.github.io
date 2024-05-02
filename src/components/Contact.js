@@ -14,6 +14,8 @@ const Button = styled.button`
   justify-self: center;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
+  width: 25rem;
+  height: 4rem;
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -51,10 +53,10 @@ class Contact extends React.Component {
               style={{ textTransform: "lowercase" }}
               href="mailto: hectormorenosoftware@gmail.com"
             >
-              hectormorenosoftware@gmail.com
+              &nbsp; hectormorenosoftware@gmail.com &nbsp;
             </a>
             or call me at
-            <a href="tel:4152120456">415-212-0456</a>.
+            <a href="tel:4152120456">&nbsp;415-212-0456&nbsp;</a>.
           </p>
         </div>
       </div>

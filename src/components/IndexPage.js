@@ -33,6 +33,9 @@ function getDataThunk() {
     dispatch({ type: "GET_DATA" });
 
     try {
+      //this is where an axios get, post, delete, or put request will go for example axios.get("https://fetchdata.com");
+      //this is where a fetch get, post, delete, put request will go for example fetch("https://fetchdata.com");
+
       const data = await getAPIMOCKDATA();
 
       return dispatch({ type: "GET_DATA_SUCCESS", payload: data });
@@ -48,12 +51,12 @@ class IndexPage extends React.PureComponent {
     this.props.getDataIndexPage();
   }
   render() {
-    const { loading } = this.props;
+    const { loading, history } = this.props;
 
     if (loading === true) {
       return (
-        <div className="Hero">
-          <div className="HeroGroup">
+        <div className="Hero" style={{ height: "100vh", overflow: "hidden" }}>
+          <div className="HeroGroup" style={{ height: "78vh" }}>
             <p>Loading please wait ...</p>
           </div>
         </div>
@@ -69,6 +72,7 @@ class IndexPage extends React.PureComponent {
               autoPlay={true}
               loop={true}
               muted={true}
+              playsInline={true}
               src="https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/workvideo.mp4"
             />
 
@@ -83,15 +87,51 @@ class IndexPage extends React.PureComponent {
           <div className="Cards">
             <h2>Companies</h2>
             <div className="CardGroup">
-              <Card image={paramountLogo} />
-              <Card image={travelersLogo} />
-              <Card image={amexLogo} />
-              <Card image={appleLogo} />
-              <Card image={dhLogo} />
-              <Card image={vertexLogo} />
-              <Card image={ccLogo} />
-              <Card image={comcastLogo} />
-              <Card image={hexagonLogo} />
+              <Card
+                image={paramountLogo}
+                history={history}
+                url={"https://paramountplus.com"}
+              />
+              <Card
+                image={travelersLogo}
+                history={history}
+                url={"https://travelers.com"}
+              />
+              <Card
+                image={amexLogo}
+                history={history}
+                url={"https://americanexpress.com"}
+              />
+              <Card
+                image={appleLogo}
+                history={history}
+                url={"https://tv.apple.com/us"}
+              />
+              <Card
+                image={dhLogo}
+                history={history}
+                url={"https://digitalharmonic.com"}
+              />
+              <Card
+                image={vertexLogo}
+                history={history}
+                url={"https://vertexinc.com"}
+              />
+              <Card
+                image={ccLogo}
+                history={history}
+                url={"https://cardconnect.com"}
+              />
+              <Card
+                image={comcastLogo}
+                history={history}
+                url={"https://corporate.comcast.com"}
+              />
+              <Card
+                image={hexagonLogo}
+                history={history}
+                url={"https://hexagon.com"}
+              />
             </div>
           </div>
         </section>
@@ -103,7 +143,12 @@ class IndexPage extends React.PureComponent {
           />
         </section>
         <section id="linked-in">
-          <Footer />
+          <Footer>
+            <p>
+              This code base is free to use for everyone except for Top 100
+              companies in Wall Street.
+            </p>
+          </Footer>
         </section>
       </div>
     );

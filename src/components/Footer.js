@@ -8,7 +8,7 @@ const FooterGroup = styled.div`
   grid-gap: 20px;
   position: absolute;
   width: 100%;
-  height: 20%;
+  height: 40%;
 `;
 const Text = styled.p`
   font-size: 24px;
@@ -56,15 +56,18 @@ const LinkGroup = styled.div`
 
 const Copyright = styled.div`
   color: #486791;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 20px;
+  font-size: 15px;
+  word-wrap: break-word;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 `;
 
 const Footer = ({ children }) => {
   const openLinkedIn = () => {
     window.open(
-      "https://www.linkedin.com/in/hector-jair-moreno-gomez-93200728a/"
+      "https://www.linkedin.com/in/hector-jair-moreno-gomez-93200728a/",
+      "_blank"
     );
   };
   return (

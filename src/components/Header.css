@@ -7,7 +7,7 @@
 }
 
 .HeaderScrolled {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   padding: 15px 0;
   backdrop-filter: blur(20px);
 }
@@ -17,7 +17,6 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  align-items: center;
   justify-items: center;
 }
 
