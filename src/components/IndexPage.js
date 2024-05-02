@@ -51,7 +51,7 @@ class IndexPage extends React.PureComponent {
     this.props.getDataIndexPage();
   }
   render() {
-    const { loading, history } = this.props;
+    const { loading } = this.props;
 
     if (loading === true) {
       return (
@@ -87,51 +87,15 @@ class IndexPage extends React.PureComponent {
           <div className="Cards">
             <h2>Companies</h2>
             <div className="CardGroup">
-              <Card
-                image={paramountLogo}
-                history={history}
-                url={"https://paramountplus.com"}
-              />
-              <Card
-                image={travelersLogo}
-                history={history}
-                url={"https://travelers.com"}
-              />
-              <Card
-                image={amexLogo}
-                history={history}
-                url={"https://americanexpress.com"}
-              />
-              <Card
-                image={appleLogo}
-                history={history}
-                url={"https://tv.apple.com/us"}
-              />
-              <Card
-                image={dhLogo}
-                history={history}
-                url={"https://digitalharmonic.com"}
-              />
-              <Card
-                image={vertexLogo}
-                history={history}
-                url={"https://vertexinc.com"}
-              />
-              <Card
-                image={ccLogo}
-                history={history}
-                url={"https://cardconnect.com"}
-              />
-              <Card
-                image={comcastLogo}
-                history={history}
-                url={"https://corporate.comcast.com"}
-              />
-              <Card
-                image={hexagonLogo}
-                history={history}
-                url={"https://hexagon.com"}
-              />
+              <Card image={paramountLogo} url={"https://paramountplus.com"} />
+              <Card image={travelersLogo} url={"https://travelers.com"} />
+              <Card image={amexLogo} url={"https://americanexpress.com"} />
+              <Card image={appleLogo} url={"https://tv.apple.com/us"} />
+              <Card image={dhLogo} url={"https://digitalharmonic.com"} />
+              <Card image={vertexLogo} url={"https://vertexinc.com"} />
+              <Card image={ccLogo} url={"https://cardconnect.com"} />
+              <Card image={comcastLogo} url={"https://corporate.comcast.com"} />
+              <Card image={hexagonLogo} url={"https://hexagon.com"} />
             </div>
           </div>
         </section>
