@@ -1,11 +1,12 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
-import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 import Card from "./Card";
 import Section from "./Section";
 import Header from "./HeaderSection";
 import Footer from "./Footer";
+import { getDataThunk } from "../redux/actions/exampleActions";
 import studioReact from "../images/logo-react.png";
 import amexLogo from "../images/amex.png";
 import appleLogo from "../images/applecomputers.jpg";
@@ -17,39 +18,17 @@ import hexagonLogo from "../images/hexagonusfederal.jpeg";
 import travelersLogo from "../images/travelers.png";
 import paramountLogo from "../images/paramount.png";
 
-function getAPIMOCKDATA() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve([
-        { name: "Sakura", lastName: "Hatori", age: "32" },
-        { name: "Haturo", lastName: "San", age: "33" },
-      ]);
-    }, 5000);
-  });
-}
-
-function getDataThunk() {
-  return async function (dispatch) {
-    dispatch({ type: "GET_DATA" });
-
-    try {
-      //this is where an axios get, post, delete, or put request will go for example axios.get("https://fetchdata.com");
-      //this is where a fetch get, post, delete, put request will go for example fetch("https://fetchdata.com");
-
-      const data = await getAPIMOCKDATA();
-
-      return dispatch({ type: "GET_DATA_SUCCESS", payload: data });
-    } catch (error) {
-      dispatch({ type: "GET_DATA_ERROR" });
-      throw new Error(error);
-    }
-  };
-}
-
 class IndexPage extends React.PureComponent {
   componentDidMount() {
-    this.props.getDataIndexPage();
+    const { data } = this.props;
+
+    if (data.length === 0) {
+      return this.props.getDataIndexPage();
+    }
+
+    return null;
   }
+
   render() {
     const { loading } = this.props;
 
@@ -121,8 +100,8 @@ class IndexPage extends React.PureComponent {
 
 function mapStateToProps(state) {
   return {
-    data: state.paymentReducer.data,
-    loading: state.paymentReducer.loading,
+    data: state.exampleReducer.data,
+    loading: state.exampleReducer.loading,
   };
 }
 

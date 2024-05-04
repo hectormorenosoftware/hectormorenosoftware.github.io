@@ -8,27 +8,27 @@ class Header extends React.PureComponent {
   };
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    return window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    return window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = () => {
     const scrollTop = window.pageYOffset;
 
     if (scrollTop > 50) {
-      this.setState({ hasScrolled: true });
+      return this.setState({ hasScrolled: true });
     } else {
-      this.setState({ hasScrolled: false });
+      return this.setState({ hasScrolled: false });
     }
   };
 
   goToContactPage = () => {
     const { history } = this.props;
 
-    history.push("/contact");
+    return history.push("/contact");
   };
 
   render() {

@@ -25,12 +25,12 @@ const Button = styled.button`
 
 class Contact extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    return window.scrollTo(0, 0);
   }
 
   goBack = () => {
     const { history } = this.props;
-    history.push("/");
+    return history.push("/");
   };
 
   render() {

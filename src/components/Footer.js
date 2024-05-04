@@ -38,21 +38,6 @@ const Button = styled.button`
     transform: translateY(-3px);
   }
 `;
-const LinkGroup = styled.div`
-  width: 500px;
-  margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-
-  a {
-    transition: 0.8s;
-  }
-
-  a:hover {
-    color: black;
-  }
-`;
 
 const Copyright = styled.div`
   color: #486791;
@@ -65,7 +50,7 @@ const Copyright = styled.div`
 
 const Footer = ({ children }) => {
   const openLinkedIn = () => {
-    window.open(
+    return window.open(
       "https://www.linkedin.com/in/hector-jair-moreno-gomez-93200728a/",
       "_blank"
     );
