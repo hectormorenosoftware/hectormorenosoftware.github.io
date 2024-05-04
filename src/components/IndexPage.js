@@ -87,10 +87,7 @@ class IndexPage extends React.PureComponent {
         </section>
         <section id="linked-in">
           <Footer>
-            <p>
-              This code base is free to use for everyone except for Top 100
-              companies in Wall Street.
-            </p>
+            <p>&copy; Hector Moreno Portfolio </p>
           </Footer>
         </section>
       </div>
