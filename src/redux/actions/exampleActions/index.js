@@ -1,15 +1,5 @@
 import { GET_DATA, GET_DATA_SUCCESS, GET_DATA_ERROR } from "../../types";
-
-function getAPIMOCKDATA() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve([
-        { name: "John", lastName: "Mattis", age: "32" },
-        { name: "Craig", lastName: "Bolton", age: "33" },
-      ]);
-    }, 5000);
-  });
-}
+import { getAPIMOCKDATA } from "../../api/api";
 
 export function getDataThunk() {
   return async function (dispatch) {
