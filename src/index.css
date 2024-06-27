@@ -36,7 +36,7 @@ a {
 }
 
 .Hero {
-  background: url(./images/splash.png);
+  background: url(./images/splashtwo.png);
   height: 920px;
   background-size: cover;
   background-position: center;
@@ -44,7 +44,7 @@ a {
 }
 
 .HeroContact {
-  background: url(./images/splash.png);
+  background: url(./images/splashtwo.png);
   height: 100%;
   width: 100%;
   position: absolute;
