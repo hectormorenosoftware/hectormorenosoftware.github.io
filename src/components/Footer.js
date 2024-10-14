@@ -30,7 +30,7 @@ const Button = styled.button`
   justify-self: center;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
-  width: 25rem;
+  width: 20rem;
   height: 4rem;
 
   &:hover {
@@ -51,16 +51,26 @@ const Copyright = styled.div`
 const Footer = ({ children }) => {
   const openLinkedIn = () => {
     return window.open(
-      "https://www.linkedin.com/in/hector-moreno-gomez-93200728a/",
+      "https://www.linkedin.com/in/hector-morenogomez-93200728a/",
       "_blank"
     );
+  };
+
+  const openGithub = () => {
+    return window.open("https://github.com/hectormorenosoftware", "_blank");
+  };
+
+  const openStackOverflow = () => {
+    return window.open("https://stackoverflow.com/users/5167502/hjm", "_blank");
   };
   return (
     <FooterGroup>
       <Text>
         Take a look at my Linked In profile by clicking on the button below
       </Text>
-      <Button onClick={openLinkedIn}>Look at Linked In </Button>
+      <Button onClick={openLinkedIn}>Linked In </Button>
+      <Button onClick={openGithub}>Github </Button>
+      <Button onClick={openStackOverflow}>Stack Overflow </Button>
       <Copyright>{children}</Copyright>
     </FooterGroup>
   );
