@@ -51,7 +51,7 @@ const Copyright = styled.div`
 const Footer = ({ children }) => {
   const openLinkedIn = () => {
     return window.open(
-      "https://www.linkedin.com/in/hector-morenogomez-93200728a/",
+      "https://www.linkedin.com/in/hector-moreno-93200728a/",
       "_blank"
     );
   };
