@@ -82,7 +82,6 @@ const Footer = ({ children }) => {
       <Button onClick={openStackOverflow}>Stack Overflow </Button>
       <Button onClick={callPhoneNumber}>Call Me </Button>
       <Button onClick={sendEmail}>Send Email </Button>
-      <Button onClick={sendEmail}>Send Email </Button>
       <Button onClick={sendWhatsapp}>Send WhatsApp</Button>
       <Copyright>{children}</Copyright>
     </FooterGroup>
