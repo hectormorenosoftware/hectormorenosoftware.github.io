@@ -68,6 +68,10 @@ const Footer = ({ children }) => {
   const sendEmail = () => {
     return window.open("mailto:hectormorenosoftware@gmail.com");
   };
+
+  const sendWhatsapp = () => {
+    return window.open("https://api.whatsapp.com/send?phone=4152120456");
+  };
   return (
     <FooterGroup>
       <Text>
@@ -78,6 +82,8 @@ const Footer = ({ children }) => {
       <Button onClick={openStackOverflow}>Stack Overflow </Button>
       <Button onClick={callPhoneNumber}>Call Me </Button>
       <Button onClick={sendEmail}>Send Email </Button>
+      <Button onClick={sendEmail}>Send Email </Button>
+      <Button onClick={sendWhatsapp}>Send WhatsApp</Button>
       <Copyright>{children}</Copyright>
     </FooterGroup>
   );
