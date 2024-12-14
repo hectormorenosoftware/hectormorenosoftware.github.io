@@ -3,33 +3,23 @@ import styled from "styled-components";
 
 const SectionGroup = styled.div`
   background-color: black;
-  height: 720px;
+  height: 25rem;
   background-size: cover;
   display: grid;
   grid-template-rows: 300px auto;
   grid-gap: 20px;
   position: relative;
   @media (max-width: 640px) {
-    height: 820px;
+    height: 21rem;
   }
-`;
-
-const SectionLogo = styled.img`
-  align-self: end;
-  width: 128px;
-  margin: 0 auto;
 `;
 
 const SectionTitleGroup = styled.div`
-  display: grid;
-  grid-template-columns: 300px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 40px;
-  grid-gap: 20px;
-  grid-template-rows: auto 100%;
-
-  @media (max-width: 720px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 const SectionTitle = styled.h3`
@@ -49,7 +39,6 @@ const SectionText = styled.p`
 
 const Section = (props) => (
   <SectionGroup image={null}>
-    <SectionLogo src={props.logo} />
     <SectionTitleGroup>
       <SectionTitle>{props.title}</SectionTitle>
       <SectionText>{props.text}</SectionText>

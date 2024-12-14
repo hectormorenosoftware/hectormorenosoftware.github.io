@@ -7,7 +7,6 @@ import Section from "./Section";
 import Header from "./HeaderSection";
 import Footer from "./Footer";
 import { getDataThunk } from "../redux/actions/exampleActions";
-import studioReact from "../images/logo-react.png";
 import amexLogo from "../images/amex.png";
 import appleLogo from "../images/applecomputers.jpg";
 import dhLogo from "../images/dh.jpg";
@@ -83,7 +82,6 @@ class IndexPage extends React.PureComponent {
         </section>
         <section id="about">
           <Section
-            logo={studioReact}
             title="About"
             text="I'm a Full Stack Software Developer that specializes in HTML5, CSS3, SASS, JavaScript, JSX, React JS, Redux, Node JS, Express JS, AWS, MySQL, PostgreSQL, and Mongo DB."
           />
