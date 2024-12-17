@@ -57,10 +57,6 @@ const Footer = ({ children }) => {
     return window.open("https://github.com/hectormorenosoftware", "_blank");
   };
 
-  const openStackOverflow = () => {
-    return window.open("https://stackoverflow.com/users/5167502/hjm", "_blank");
-  };
-
   const callPhoneNumber = () => {
     return window.open("tel:4152120456");
   };
@@ -79,7 +75,6 @@ const Footer = ({ children }) => {
       </Text>
       <Button onClick={openLinkedIn}>Linked In </Button>
       <Button onClick={openGithub}>Github </Button>
-      <Button onClick={openStackOverflow}>Stack Overflow </Button>
       <Button onClick={callPhoneNumber}>Call Me </Button>
       <Button onClick={sendEmail}>Send Email </Button>
       <Button onClick={sendWhatsapp}>Send WhatsApp</Button>
