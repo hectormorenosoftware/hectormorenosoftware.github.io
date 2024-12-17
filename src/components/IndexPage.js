@@ -38,7 +38,7 @@ class IndexPage extends React.PureComponent {
             className="HeroGroup"
             style={{ height: "78vh", background: "none" }}
           >
-            <p>Loading please wait ...</p>
+            <p>Loading website please wait ...</p>
           </div>
         </div>
       );
@@ -67,6 +67,7 @@ class IndexPage extends React.PureComponent {
         <section id="companies">
           <div className="Cards">
             <h2>Companies</h2>
+            <p style={{ textAlign: "center" }}>Click on images to see more</p>
             <div className="CardGroup">
               <Card image={paramountLogo} url={"https://paramountplus.com"} />
               <Card image={travelersLogo} url={"https://travelers.com"} />
