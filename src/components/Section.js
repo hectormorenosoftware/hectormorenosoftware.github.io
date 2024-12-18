@@ -35,6 +35,10 @@ const SectionTitle = styled.h3`
 
 const SectionText = styled.p`
   color: white;
+
+  @media (max-width: 720px) {
+    font-size: 18px;
+  }
 `;
 
 const Section = (props) => (
