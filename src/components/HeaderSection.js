@@ -9,6 +9,12 @@ class Header extends React.PureComponent {
     return history.push("/contact");
   };
 
+  goToQandAPage = () => {
+    const { history } = this.props;
+
+    return history.push("/QandA");
+  };
+
   render() {
     return (
       <div className="Header">
@@ -16,6 +22,9 @@ class Header extends React.PureComponent {
           <a href="#companies">Companies</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
+          <a style={{ cursor: "pointer" }} onClick={this.goToQandAPage}>
+            Q and A
+          </a>
         </div>
       </div>
     );
