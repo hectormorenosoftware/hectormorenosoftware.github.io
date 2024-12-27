@@ -15,7 +15,7 @@ class QandA extends React.Component {
 
   render() {
     return (
-      <div className="Hero">
+      <div className="Hero" style={{ height: "100vh", overflowX: "hidden" }}>
         <div
           style={{
             display: "flex",
@@ -42,13 +42,13 @@ class QandA extends React.Component {
             Go Back
           </button>
           <h1>Q and A</h1>
-          <p>
+          <p style={{ textAlign: "center" }}>
             How many regressions(also known as bugs or glitches) should a code
             base have before considering to start over? <br />
             My answer: I think once a code base has 20 bugs(also known as
             glitches or errors) you should start over.
           </p>
-          <p>
+          <p style={{ textAlign: "center" }}>
             Why do I choose React JS over Vue JS or Angular 5, 6, 7, or 8?{" "}
             <br />
             My answer: I chose React JS because Facebook created React JS and
@@ -61,7 +61,7 @@ class QandA extends React.Component {
             Sam's Club, Sprouts, Target, General Motors, Tesla, Ford, and the
             U.S. Federal Government use React JS as well to generate revenue.
           </p>
-          <p>
+          <p style={{ textAlign: "center " }}>
             Why do I choose Node JS over Java Spring Boot and what are the
             advantages of choosing Node JS as a back-end? <br />
             My answer: I choose Node JS because it uses libuv which is a library
