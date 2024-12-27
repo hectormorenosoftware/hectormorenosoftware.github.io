@@ -15,7 +15,7 @@ class QandA extends React.Component {
 
   render() {
     return (
-      <div className="Hero" style={{ height: "100rem" }}>
+      <div className="Hero" style={{ height: "120rem" }}>
         <div
           style={{
             display: "flex",
