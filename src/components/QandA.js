@@ -49,7 +49,7 @@ class QandA extends React.Component {
             glitches or errors) you should start over.
           </p>
           <p>
-            Why do I choose React JS over Vue JS or Angular 5, 6, 7, 0r 8?{" "}
+            Why do I choose React JS over Vue JS or Angular 5, 6, 7, or 8?{" "}
             <br />
             My answer: I chose React JS because Facebook created React JS and
             uses React JS in Facebook and Instagram. Which means that this
