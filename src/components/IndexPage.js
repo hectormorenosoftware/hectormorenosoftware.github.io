@@ -84,7 +84,7 @@ class IndexPage extends React.PureComponent {
         <section id="about">
           <Section
             title="About"
-            text="I'm a Full Stack Software Engineer with over 6 years of experience that specializes in HTML5, CSS3, SCSS, JavaScript, JSX, React JS, React Native, Redux, Node JS, Express JS, AWS, MySQL, PostgreSQL, and Mongo DB.
+            text="I'm a Full-Stack Software Engineer with over 6 years of experience that specializes in HTML5, CSS3, SCSS, JavaScript, JSX, React JS, React Native, Redux, Node JS, Express JS, AWS, MySQL, PostgreSQL, and Mongo DB.
             I'm the Full Stack Software Engineer that architected, developed, and designed Apple TV+ and Paramount+."
           />
         </section>
