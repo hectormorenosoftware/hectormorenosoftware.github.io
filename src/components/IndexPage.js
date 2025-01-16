@@ -38,7 +38,7 @@ class IndexPage extends React.PureComponent {
             className="HeroGroup"
             style={{ height: "78vh", background: "none" }}
           >
-            <p>Loading website please wait ...</p>
+            <p>Loading Hector Moreno's website please wait ...</p>
           </div>
         </div>
       );
@@ -59,9 +59,9 @@ class IndexPage extends React.PureComponent {
 
             <h1>
               Welcome <br />
-              to my website
+              to Hector Moreno's website
             </h1>
-            <p>Please scroll down to see the companies I have worked for</p>
+            <p>Please scroll down to see the companies he has worked for</p>
           </div>
         </div>
         <section id="companies">
@@ -84,8 +84,8 @@ class IndexPage extends React.PureComponent {
         <section id="about">
           <Section
             title="About"
-            text="I'm a Full-Stack Software Engineer with over 6 years of experience that specializes in HTML5, CSS3, SCSS, JavaScript, JSX, React JS, React Native, Redux, Node JS, Express JS, AWS, MySQL, PostgreSQL, and Mongo DB.
-            I'm the Full Stack Software Engineer that architected, developed, and designed Apple TV+ and Paramount+."
+            text="Hector Moreno is a Full-Stack Software Engineer with over 6 years of experience that specializes in HTML5, CSS3, SCSS, JavaScript, JSX, React JS, React Native, Redux, Node JS, Express JS, AWS, MySQL, PostgreSQL, and Mongo DB.
+            He is the Full-Stack Software Engineer that architected, developed, and designed Apple TV+ and Paramount+."
           />
         </section>
         <section id="contact">

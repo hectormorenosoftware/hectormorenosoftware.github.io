@@ -1,9 +1,8 @@
 import React from "react";
-import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 
-class QandA extends React.Component {
+class QandA extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {};
