@@ -178,6 +178,16 @@ class QandA extends React.PureComponent {
             knows how to write and read into a database. I also check if the
             candidate knows how to test API's before they are in production.
           </p>
+          <p style={{ textAlign: "center" }}>
+            Where are you from? Are you a legal resident or citizen?
+            <br />I was born in Mexico, but my step father gave me a green card
+            at the age of 18, at that age in 2009 I enlisted into the U.S.
+            Marine Corps Reserve, after Infantry School in Camp Pendleton,
+            California I was given a U.S. Citizenship by the Bush Administration
+            8 months after I graduated from Infantry School. I have tried to
+            re-enlist as 0311 active duty, but I was not successful even though
+            I have an Honorable Discharge.
+          </p>
         </div>
       </div>
     );
