@@ -106,8 +106,7 @@ class QandA extends React.PureComponent {
             Computer Science I do have my transcript with me wherever I go.
           </p>
           <p style={{ textAlign: "center" }}>
-            Do you have any code bases that you could allow me to try for free
-            before hiring you? <br />
+            Do you have a github? <br />
             My answer: I do I recommend you to go to my github which is
             https://github.com/hectormorenosoftware every single repository in
             my github has a url in the README.md section to show you the website
