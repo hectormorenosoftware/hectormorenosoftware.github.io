@@ -62,7 +62,7 @@ class QandA extends React.PureComponent {
           </p>
           <p style={{ textAlign: "center " }}>
             Why do I choose Node JS over Java Spring Boot and what are the
-            advantages of choosing Node JS as a back-end? <br />
+            advantages of choosing Node JS as a Back-End? <br />
             My answer: I choose Node JS because it uses libuv which is a library
             in C to handle all asynchronous behavior, this means that all
             asynchronous behavior will be very fast compared to using Java.
@@ -168,25 +168,70 @@ class QandA extends React.PureComponent {
             look at my apps in iOS and Android.
           </p>
           <p style={{ textAlign: "center" }}>
-            How do you test potential candidates for UI Development or Back-end
+            How do you test potential candidates for UI Development or Back-End
             Development?
             <br />
             My answer: For UI Development I test a candidate to check if the
             candidate knows what promises are and if the candidate can
-            manipulate data in the UI. For Back-end I test to check if the
+            manipulate data in the UI. For Back-End I test to check if the
             candidate can manipulate data in the server and if the candidate
             knows how to write and read into a database. I also check if the
             candidate knows how to test API's before they are in production.
           </p>
           <p style={{ textAlign: "center" }}>
             Where are you from? Are you a legal resident or citizen?
-            <br />I was born in Mexico, but my step father gave me a green card
-            at the age of 18, at that age in 2009 I enlisted into the U.S.
+            <br />
+            My answer: I was born in Mexico, but my step father gave me a green
+            card at the age of 18, at that age in 2009 I enlisted into the U.S.
             Marine Corps Reserve, after Infantry School in Camp Pendleton,
             California I was given a U.S. Citizenship by the Bush Administration
-            8 months after I graduated from Infantry School. I have tried to
-            re-enlist as 0311 active duty, but I was not successful even though
-            I have an Honorable Discharge.
+            8 months after I graduated from Infantry School. I did volunteer to
+            deploy to Iraq and Afghanistan and I have tried to re-enlist as 0311
+            active duty, but I was not successful even though I have an
+            Honorable Discharge.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            What do you do in your free time? <br />
+            My answer: I like to study books and I like to watch movies.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            What is the difference between hash routing and server side routing?{" "}
+            <br />
+            My answer: The difference between hash routing and server side
+            routing is that whenever you use hash routing you send all of the
+            website in the first request including every route. Whenever you use
+            server side routing for every page you will make new requests every
+            single time you try to load a new page which will load the HTML and
+            CSS including all of the images or data associated with the route
+            which can cost you more money.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            What are your thoughts about cache for images and css? <br />
+            My answer: I think you should avoid it because there is no way to
+            know how much data your user has for this operation, it might make
+            his machine crash.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            What about passwords management what approach do you take? <br />
+            My answer: I want to remind you that whenever you send data through
+            HTTPS everything is encrypted which means that every chunk of data
+            that is sent to the server with HTTP Headers will be secured with
+            certificates. I would recommend you to store the password in your
+            database since the password is already sensitive information anyway.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            What about QA do you think they need an engineering background to
+            help? <br />
+            My answer: No, a QA Analyst or QA Engineer doesn't need any
+            engineering experience to be able to help in a software engineering
+            team. A QA doesn't need a college degree to be able to collaborate.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            Do you feel Project Managers make your life easier whenever you are
+            trying to deliver software?
+            <br />
+            My answer: Yes, I do feel Project Managers are important to a
+            software engineering team.
           </p>
         </div>
       </div>
