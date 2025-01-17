@@ -167,6 +167,17 @@ class QandA extends React.PureComponent {
             and Android before if you have access to Expo Studio please take a
             look at my apps in iOS and Android.
           </p>
+          <p style={{ textAlign: "center" }}>
+            How do you test potential candidates for UI Development or Back-end
+            Development?
+            <br />
+            My answer: For UI Development I test a candidate to check if the
+            candidate knows what promises are and if the candidate can
+            manipulate data in the UI. For Back-end I test to check if the
+            candidate can manipulate data in the server and if the candidate
+            knows how to write and read into a database. I also check if the
+            candidate knows how to test API's before they are in production.
+          </p>
         </div>
       </div>
     );
