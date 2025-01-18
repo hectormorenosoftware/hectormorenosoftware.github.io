@@ -107,10 +107,9 @@ class QandA extends React.PureComponent {
           </p>
           <p style={{ textAlign: "center" }}>
             Do you have a github? <br />
-            My answer: I do I recommend you to go to my github which is
-            https://github.com/hectormorenosoftware every single repository in
-            my github has a url in the README.md section to show you the website
-            live in the internet.
+            My answer: github.com/hectormorenosoftware <br />
+            Every single repository in my github has a url in the README.md
+            section to show you the website live in the internet.
           </p>
           <p style={{ textAlign: "center" }}>
             What do you think about AWS? Do you know of any other options to
