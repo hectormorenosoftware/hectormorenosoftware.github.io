@@ -233,6 +233,41 @@ class QandA extends React.PureComponent {
             My answer: Yes, I do feel Project Managers are important to a
             software engineering team.
           </p>
+          <p style={{ textAlign: "center" }}>
+            My iphone, ipad, and my android phone sometimes shuts down and
+            sometimes is very slow, why does this happen? <br />
+            My answer: This happens because you have too many Safari or Google
+            Chrome browser windows open, too many Google Chrome or Safari
+            browser tabs open, and because you have too many apps open too.
+            There are a lot of YouTube videos that can help you fix this issue,
+            you can do it yourself and it shouldn't take more than 10 minutes.
+            You shouldn't need the help of a professional thanks to the YouTube
+            videos. I wouldn't recommend to have more than 2 apps open at a
+            time, I also wouldn't recommend to have more than 2 Safari or Google
+            Chrome browser windows or browser tabs open at a time. <br />
+            Examples of browsers: Google Chrome, Internet Explorer, Safari,
+            Firefox, and Microsoft Edge. <br />
+            Examples of apps: Facebook, Instagram, Snapchat, and Uber.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            My laptop and my desktop computer sometimes gets very slow and
+            sometimes it shuts down, why does this happen? <br />
+            My answer: It's because you have too many desktop applications open
+            and because you have too many Google Chrome, Firefox, Safari,
+            Microsoft Edge, or Internet Explorer browser windows or browser tabs
+            open at the same time. There are a lot of videos in YouTube that can
+            help you fix this issue, it shouldn't take more than 10 minutes to
+            fix this issue, and you shouldn't need a professional to help you. I
+            would recommend to have only two Safari, Google Chrome, Firefox,
+            Microsoft Edge, or Internet Explorer tabs or windows open at the
+            same time, but no more than two. I would also recommend to not have
+            more than two desktop applications open at the same time such as
+            Microsoft Word and Microsoft Power Point. <br />
+            Examples of browsers: Google Chrome, Internet Explorer, Safari,
+            Firefox, and Microsoft Edge. <br />
+            Examples of desktop apps: Microsoft Excel, Microsoft Word, and
+            Microsoft Power Point.
+          </p>
         </div>
       </div>
     );
