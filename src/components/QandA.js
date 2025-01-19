@@ -262,6 +262,32 @@ class QandA extends React.PureComponent {
             Google Cloud is very affordable is like having a USB in the internet
             of at least 100GB for like $5 per month.
           </p>
+          <p className="ParagraphIDQandA">
+            {" "}
+            Do you know how to download music for free? And do you know how to
+            add the song to your iphone to listen to it? <br />
+            My answer: Yes, this website below will allow you to download free
+            mp3 files to your desktop pc or to your laptop. <br />
+            <a href="https://e2.freemp3cloud.com/" target="_blank">
+              https://e2.freemp3cloud.com/
+            </a>
+            <br />
+            The website below will allow you to turn the mp3 songs into m4a
+            songs for your iphone <br />
+            <a href="https://cloudconvert.com/" target="_blank">
+              {" "}
+              https://cloudconvert.com/
+            </a>
+            <br />
+            Just remember that whenever you click on a song you will be
+            redirected to another page, however, if you go back to the website
+            that has all of the songs you should be able to download the song
+            you chose. The page that opens I recommend you to do nothing there
+            just close it. Remember that iphones only accept m4a songs not mp3
+            songs every mp3 song you download you will have to turn into a m4a
+            song for your iphone, mp3 songs are for android phones and pc, m4a
+            songs are for iphones and ipads.
+          </p>
         </div>
       </div>
     );
