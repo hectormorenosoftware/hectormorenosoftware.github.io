@@ -9,7 +9,7 @@ const Card = (props) => {
   };
 
   return (
-    <div className="Card" onClick={takeToUrl} style={{ cursor: "pointer" }}>
+    <div className="Card" onClick={takeToUrl}>
       <img src={props.image} alt="hello-world" />
     </div>
   );

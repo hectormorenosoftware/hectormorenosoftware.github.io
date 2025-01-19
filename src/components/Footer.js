@@ -71,7 +71,8 @@ const Footer = ({ children }) => {
   return (
     <FooterGroup>
       <Text>
-        Take a look at my Linked In profile by clicking on the button below
+        Take a look at Hector Moreno's Linked In profile by clicking on the
+        button below
       </Text>
       <Button onClick={openLinkedIn}>Linked In </Button>
       <Button onClick={openGithub}>Github </Button>

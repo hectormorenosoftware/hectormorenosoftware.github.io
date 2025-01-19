@@ -33,11 +33,8 @@ class IndexPage extends React.PureComponent {
 
     if (loading === true) {
       return (
-        <div className="Hero" style={{ height: "100vh", overflow: "hidden" }}>
-          <div
-            className="HeroGroup"
-            style={{ height: "78vh", background: "none" }}
-          >
+        <div className="Hero" id="HeroIDTwo">
+          <div className="HeroGroup" id="HeroGroupID">
             <p>Loading Hector Moreno's website please wait ...</p>
           </div>
         </div>

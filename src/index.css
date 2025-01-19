@@ -32,12 +32,28 @@ a {
   font-weight: 600;
 }
 
+.FlexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Hero {
   background: url(./images/splashtwo.png);
   height: 50%;
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+#HeroID {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#HeroIDTwo {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .HeroContact {
@@ -53,6 +69,11 @@ a {
   text-align: center;
   height: 67%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#HeroGroupID {
+  height: 78vh;
+  background: none;
 }
 
 .Hero h1 {
@@ -147,4 +168,21 @@ a {
   .CardGroup {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.BackButtonQandA {
+  width: 20rem;
+  height: 4rem;
+  margin: 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(10, 102, 194);
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+}
+
+.ParagraphIDQandA {
+  text-align: center;
 }

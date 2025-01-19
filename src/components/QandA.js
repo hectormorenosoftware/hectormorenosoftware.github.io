@@ -14,40 +14,23 @@ class QandA extends React.PureComponent {
 
   render() {
     return (
-      <div className="Hero" style={{ height: "100vh", overflowX: "hidden" }}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
+      <div className="Hero" id="HeroID">
+        <div className="FlexColumn">
           <button
             type="button"
+            className="BackButtonQandA"
             onClick={this.GoBackEvent}
-            style={{
-              width: "20rem",
-              height: "4rem",
-              margin: "2rem",
-              borderRadius: "30px",
-              cursor: "pointer",
-              color: "white",
-              backgroundColor: "rgb(10, 102, 194)",
-              fontSize: "24px",
-              fontWeight: "600",
-              border: "none",
-            }}
           >
             Go Back
           </button>
           <h1>Q and A</h1>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             How many regressions(also known as bugs or glitches) should a code
             base have before considering to start over? <br />
             My answer: I think once a code base has 20 bugs(also known as
             glitches or errors) you should start over.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             Why do I choose React JS over Vue JS, Angular 18, or Angular 19?{" "}
             <br />
             My answer: I chose React JS because Facebook created React JS and
@@ -60,7 +43,7 @@ class QandA extends React.PureComponent {
             Sam's Club, Sprouts, Target, General Motors, Tesla, Ford, and the
             U.S. Federal Government use React JS as well to generate revenue.
           </p>
-          <p style={{ textAlign: "center " }}>
+          <p className="ParagraphIDQandA">
             Why do I choose Node JS over Java Spring Boot and what are the
             advantages of choosing Node JS as a Back-End? <br />
             My answer: I choose Node JS because it uses libuv which is a library
@@ -68,7 +51,7 @@ class QandA extends React.PureComponent {
             asynchronous behavior will be very fast compared to using Java.
             Apple Inc. uses Node JS to make money that is important to know.
           </p>
-          <p style={{ textAlign: "center " }}>
+          <p className="ParagraphIDQandA">
             What is your recommendation for cloud based database systems? <br />
             My answer: If you want control over your data I recommend you to use
             ngrok, it will allow you to write and read data from your own
@@ -77,13 +60,13 @@ class QandA extends React.PureComponent {
             like, remember that your machine and your router will be used to
             serve the data including your website.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             Where can I find you if I have any questions? <br /> My answer:I
             currently live in 817 Hidalgo St, Laredo, Texas 78040 a block away
             from the Laredo Police Station. My phone number is 415-212-0456 and
             my e-mail is hectormorenosoftware@gmail.com
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What do you recommend me to use to align content in the UI? <br />
             My answer: I recommend you to use flex box or CSS grid instead of
             writing media queries for absolute or relative elements everytime
@@ -99,19 +82,19 @@ class QandA extends React.PureComponent {
             right, and bottom properties and to make it easier for you to align
             content in the UI.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             Do you have your college transcript with you? <br />
             My answer: I do, I graduated from the University of Texas at
             Arlington with a B.S. in Computer Science in 2015 my minor is also
             Computer Science I do have my transcript with me wherever I go.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             Do you have a github? <br />
             My answer: github.com/hectormorenosoftware <br />
             Every single repository in my github has a url in the README.md
             section to show you the website live in the internet.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What do you think about AWS? Do you know of any other options to
             host servers and UI's in the internet? <br />
             My answer: AWS is a trusted source to host your website and server
@@ -123,14 +106,14 @@ class QandA extends React.PureComponent {
             github it does have a pipeline for you to track commits and builds,
             but you can only host UI's in Netlify not servers.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What about charging money? What do you recommend me to use if I want
             to charge customers money? <br />
             My answer: I recommend you to create your own API using the Stripe
             npm package. This will allow you to charge credit cards and debit
             cards very easily in your website.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             I'm new to React JS and Node JS how can I change my development
             environment to work in development, QA, Staging, or Production
             databases? <br />
@@ -142,7 +125,7 @@ class QandA extends React.PureComponent {
             flag from the React JS UI to indicate the server which database to
             use.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What about apps in iOS and Android? Have you ever worked in apps in
             iOS and Android? What do you recommend me to do if I have any ideas
             in iOS and Android? <br />
@@ -166,7 +149,7 @@ class QandA extends React.PureComponent {
             and Android before if you have access to Expo Studio please take a
             look at my apps in iOS and Android.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             How do you test potential candidates for UI Development or Back-End
             Development?
             <br />
@@ -177,7 +160,7 @@ class QandA extends React.PureComponent {
             knows how to write and read into a database. I also check if the
             candidate knows how to test API's before they are in production.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             Where are you from? Are you a legal resident or citizen?
             <br />
             My answer: I was born in Mexico, but my step father gave me a green
@@ -189,11 +172,11 @@ class QandA extends React.PureComponent {
             active duty, but I was not successful even though I have an
             Honorable Discharge.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What do you do in your free time? <br />
             My answer: I like to study books and I like to watch movies.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What is the difference between hash routing and server side routing?{" "}
             <br />
             My answer: The difference between hash routing and server side
@@ -204,13 +187,13 @@ class QandA extends React.PureComponent {
             CSS including all of the images or data associated with the route
             which can cost you more money.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What are your thoughts about cache for images and css? <br />
             My answer: I think you should avoid it because there is no way to
             know how much data your user has for this operation, it might make
             his machine crash.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What about passwords management what approach do you take? <br />
             My answer: I want to remind you that whenever you send data through
             HTTPS everything is encrypted which means that every chunk of data
@@ -218,21 +201,21 @@ class QandA extends React.PureComponent {
             certificates. I would recommend you to store the password in your
             database since the password is already sensitive information anyway.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             What about QA do you think they need an engineering background to
             help? <br />
             My answer: No, a QA Analyst or QA Engineer doesn't need any
             engineering experience to be able to help in a software engineering
             team. A QA doesn't need a college degree to be able to collaborate.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             Do you feel Project Managers make your life easier whenever you are
             trying to deliver software?
             <br />
             My answer: Yes, I do feel Project Managers are important to a
             software engineering team.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             My iphone, ipad, and my android phone sometimes shuts down and
             sometimes is very slow, why does this happen? <br />
             My answer: This happens because you have too many Safari or Google
@@ -248,7 +231,7 @@ class QandA extends React.PureComponent {
             Firefox, and Microsoft Edge. <br />
             Examples of apps: Facebook, Instagram, Snapchat, and Uber.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p className="ParagraphIDQandA">
             My laptop and my desktop computer sometimes gets very slow and
             sometimes it shuts down, why does this happen? <br />
             My answer: It's because you have too many desktop applications open
@@ -266,6 +249,18 @@ class QandA extends React.PureComponent {
             Firefox, and Microsoft Edge. <br />
             Examples of desktop apps: Microsoft Excel, Microsoft Word, and
             Microsoft Power Point.
+          </p>
+          <p className="ParagraphIDQandA">
+            My iphone and my android phone ran out of memory which makes it
+            impossible for me to take new pictures, I don't want to buy a new
+            phone what can I do about this? Are there any options that are
+            affordable? <br />
+            My answer: Yes there is an affordable option, you can use iCloud for
+            iOS or Google Cloud Photos and save all of your photos and videos
+            there. After that you can delete every picture from you phone since
+            it's saved already in iCloud or Google Cloud Photos. iCloud and
+            Google Cloud is very affordable is like having a USB in the internet
+            of at least 100GB for like $5 per month.
           </p>
         </div>
       </div>

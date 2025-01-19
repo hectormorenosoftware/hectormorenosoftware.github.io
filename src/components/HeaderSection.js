@@ -22,9 +22,7 @@ class Header extends React.PureComponent {
           <a href="#companies">Companies</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-          <a style={{ cursor: "pointer" }} onClick={this.goToQandAPage}>
-            Q and A
-          </a>
+          <a onClick={this.goToQandAPage}>Q and A</a>
         </div>
       </div>
     );
