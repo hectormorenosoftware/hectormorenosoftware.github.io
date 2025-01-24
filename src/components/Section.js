@@ -37,7 +37,7 @@ const SectionText = styled.p`
   color: white;
 
   @media (max-width: 720px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
