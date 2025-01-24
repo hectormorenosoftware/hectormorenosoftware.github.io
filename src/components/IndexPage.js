@@ -82,7 +82,7 @@ class IndexPage extends React.PureComponent {
           <Section
             title="About"
             text="Hector Moreno is a Full-Stack Software Engineer with over 6 years of experience that specializes in HTML5, CSS3, SCSS, JavaScript, JSX, React JS, React Native, Redux, Node JS, Express JS, AWS, MySQL, PostgreSQL, and Mongo DB.
-            He is the Full-Stack Software Engineer that architected, developed, and designed Apple TV+ and Paramount+."
+            He is a Computer Science graduate from the University of Texas at Arlington and the Full-Stack Software Engineer that architected, developed, and designed Apple TV+ and Paramount+."
           />
         </section>
         <section id="contact">
