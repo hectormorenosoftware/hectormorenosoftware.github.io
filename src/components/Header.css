@@ -30,6 +30,12 @@
     width: 50%;
     text-align: center;
   }
+
+  @media screen and (max-width: 750px) {
+    &:hover {
+      width: 100%;
+    }
+  }
 }
 
 .Header button {
