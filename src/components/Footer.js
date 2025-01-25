@@ -33,6 +33,9 @@ const Button = styled.button`
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     transform: translateY(-3px);
+    color: #0a66c2;
+    background: white;
+    border: 3px solid #0a66c2;
   }
 `;
 
