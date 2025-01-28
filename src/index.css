@@ -186,7 +186,6 @@ a {
   &:hover {
     color: rgb(10, 102, 194);
     background-color: white;
-    border: 4px solid black;
   }
 }
 

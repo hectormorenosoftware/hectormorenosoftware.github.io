@@ -71,6 +71,13 @@ const Footer = ({ children }) => {
   const sendWhatsapp = () => {
     return window.open("https://api.whatsapp.com/send?phone=4152120456");
   };
+
+  const redirectToRepo = () => {
+    return window.open(
+      "https://github.com/hectormorenosoftware/react-website-portfolio",
+      "_blank"
+    );
+  };
   return (
     <FooterGroup>
       <Text>
@@ -78,6 +85,7 @@ const Footer = ({ children }) => {
         button below
       </Text>
       <Button onClick={openLinkedIn}>Linked In </Button>
+      <Button onClick={redirectToRepo}>Site's Code</Button>
       <Button onClick={openGithub}>Github </Button>
       <Button onClick={callPhoneNumber}>Call Me </Button>
       <Button onClick={sendEmail}>Send Email </Button>
