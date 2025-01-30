@@ -14,7 +14,7 @@ class QandA extends React.PureComponent {
 
   render() {
     return (
-      <div className="Hero" id="HeroID">
+      <div className="HeroQAndA">
         <div className="FlexColumn">
           <button
             type="button"
