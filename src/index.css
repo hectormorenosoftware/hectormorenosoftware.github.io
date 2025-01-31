@@ -54,7 +54,7 @@ a {
   background: white;
   overflow-x: hidden;
   color: black;
-  transition: 11.1s;
+  transition: 10.1s;
 
   &:hover {
     background: black;
