@@ -67,6 +67,28 @@ class QandA extends React.PureComponent {
             my e-mail is hectormorenosoftware@gmail.com
           </p>
           <p className="ParagraphIDQandA">
+            How can I deploy a new site without connecting to git and without
+            using AWS? <br />
+            My answer: In &nbsp;
+            <a href="https://www.netlify.com/" target="_blank">
+              www.netlify.com
+            </a>
+            &nbsp; you can sign up by using your email, in the "Sites" section
+            right above the "Builds" section, if you scroll down all the way to
+            the bottom of the page there is an option for you to browse for a
+            folder in your computer, most of the time the UI code it's on a
+            "dist" or "build" folder in your computer. It will be free of cost
+            initially, but if you choose to buy a domain name it will cost you
+            $12 per year. After you deploy your website by choosing a folder
+            from your computer, on the "Sites" section click on your website and
+            you will see a url to your website in green that ends with the names
+            ".netlify.app". There will also be a "Set up your site" section
+            right below your url with a "1, 2, 3" follow the steps to buy a
+            domain and to secure your website with https. Always remember that
+            the navbar it's on the left side of the website it has logo's and
+            they need to be clicked for you to see text.
+          </p>
+          <p className="ParagraphIDQandA">
             What do you recommend me to use to align content in the UI? <br />
             My answer: I recommend you to use flex box or CSS grid instead of
             writing media queries for absolute or relative elements everytime
