@@ -86,7 +86,10 @@ class QandA extends React.PureComponent {
             right below your url with a "1, 2, 3" follow the steps to buy a
             domain and to secure your website with https. Always remember that
             the navbar it's on the left side of the website it has logo's and
-            they need to be clicked for you to see text.
+            they need to be clicked for you to see text. Also remember that
+            Netlify is only for UI code which is HTML, CSS, and JavaScript,
+            servers can't be uploaded to Netlify. If you need API's I would
+            recommend you to use Node JS and Mongo DB.
           </p>
           <p className="ParagraphIDQandA">
             What do you recommend me to use to align content in the UI? <br />
