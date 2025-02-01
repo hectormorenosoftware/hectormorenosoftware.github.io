@@ -25,8 +25,8 @@ class QandA extends React.PureComponent {
           </button>
           <h1>Q and A</h1>
           <p className="ParagraphIDQandA">
-            How can I deploy a new website if I'm not an software engineer?{" "}
-            <br />
+            How can I deploy a new website into the internet if I'm not an
+            software engineer? <br />
             My answer: In &nbsp;
             <a href="https://www.netlify.com/" target="_blank">
               www.netlify.com
