@@ -30,7 +30,7 @@ class QandA extends React.PureComponent {
           <h1>Q and A</h1>
           <p className="ParagraphIDQandA">
             How can I deploy a new website into the internet if I'm not a
-            software engineer? <br />
+            Software Engineer and I don't have experience in tech? <br />
             My answer: In &nbsp;
             <a href="https://www.netlify.com/" target="_blank">
               www.netlify.com
@@ -39,19 +39,32 @@ class QandA extends React.PureComponent {
             right above the "Builds" section, if you scroll down all the way to
             the bottom of the page there is an option for you to browse for a
             folder in your computer, most of the time the UI code it's on a
-            "dist" or "build" folder in your computer. It will be free of cost
-            initially, but if you choose to buy a domain name it will cost you
-            $12 per year. After you deploy your website by choosing a folder
-            from your computer, on the "Sites" section click on your website and
-            you will see a url to your website in green that ends with the names
+            "dist" or "build" folder in your computer. Remember that Netlify is
+            only for UI code which is HTML, CSS, and JavaScript, servers can't
+            be uploaded to Netlify. If you need API's I would recommend you to
+            use Node JS, Mongo DB, and Heroku, remember that Heroku &nbsp;
+            <a href="https://www.heroku.com/" target="_blank">
+              www.heroku.com
+            </a>{" "}
+            &nbsp; is a website like Netlify, but for servers only and it's
+            owned by Salesforce. It will be free of cost initially, but if you
+            choose to buy a domain name it will cost you $12 per year. After you
+            deploy your website by choosing a folder from your computer, on the
+            "Sites" section in Netlify click on your website and you will see a
+            url to your website in green that ends with the names
             ".netlify.app". There will also be a "Set up your site" section
-            right below your url with a "1, 2, 3" follow the steps to buy a
-            domain and to secure your website with https. Always remember that
-            the navbar it's on the left side of the website it has logo's and
-            they need to be clicked for you to see text. Also remember that
-            Netlify is only for UI code which is HTML, CSS, and JavaScript,
-            servers can't be uploaded to Netlify. If you need API's I would
-            recommend you to use Node JS and Mongo DB.
+            right below your url with a "1, 2, 3" as a title. Follow the steps
+            to buy a domain and to secure your website with HTTPS. Always
+            remember that the navbar it's on the left side of the website it has
+            logo's and they need to be clicked for you to see text. Remember
+            that servers are used to connect to databases, there are many types
+            of servers, servers like Java Spring Boot, Node JS, or .Net are used
+            to connect to databases to turn data into JSON and "serve" the data
+            to a website that is made with HTML, CSS, and JavaScript. If you
+            want to migrate your data from you PostgreSQL, MySQL, or SQL
+            database to Mongo DB it will be very easy to do that using Node JS,
+            I want to remind you that Node JS uses C for all asynchronous
+            behavior in Node JS.
           </p>
 
           <p className="ParagraphIDQandA">
@@ -60,12 +73,7 @@ class QandA extends React.PureComponent {
             My answer: I chose React JS because Facebook created React JS and
             uses React JS in Facebook and Instagram. Which means that this
             library can be trusted at scale with large amounts of API requests
-            and data. Apple Inc., Microsoft, Linked In, AT&T, T-Mobile, Verizon,
-            Amazon, Nike, Chase Bank, Wells Fargo Bank, Bank of America,
-            American Express, Visa, Master Card, American Airlines, United
-            Airlines, Play Station, Xbox, Sony, Panasonic, Walmart, Costco,
-            Sam's Club, Sprouts, Target, General Motors, Tesla, Ford, and the
-            U.S. Federal Government use React JS as well to generate revenue.
+            and data.
           </p>
           <p className="ParagraphIDQandA">
             Why do I choose Node JS over Java Spring Boot and what are the
@@ -82,7 +90,7 @@ class QandA extends React.PureComponent {
             machine in your own building if you use Node JS. It will also allow
             you to create as many endpoints(also known as API's) as you would
             like, remember that your machine and your router will be used to
-            serve the data including your website.
+            serve the data including your website or you could use Mongo DB.
           </p>
 
           <p className="ParagraphIDQandA">
@@ -118,7 +126,7 @@ class QandA extends React.PureComponent {
             Microsoft Edge, or Internet Explorer browser windows or browser tabs
             open at the same time. There are a lot of videos in YouTube that can
             help you fix this issue, it shouldn't take more than 10 minutes to
-            fix this issue, and you shouldn't need a professional to help you. I
+            fix this issue, and you shouldn't need an engineer to help you. I
             would recommend to have only two Safari, Google Chrome, Firefox,
             Microsoft Edge, or Internet Explorer tabs or windows open at the
             same time, but no more than two. I would also recommend to not have
