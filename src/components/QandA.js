@@ -8,6 +8,10 @@ class QandA extends React.PureComponent {
     this.state = {};
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   GoBackEvent = () => {
     this.props.history.push("/");
   };
