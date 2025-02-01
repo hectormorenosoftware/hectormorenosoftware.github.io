@@ -67,8 +67,8 @@ class QandA extends React.PureComponent {
             my e-mail is hectormorenosoftware@gmail.com
           </p>
           <p className="ParagraphIDQandA">
-            How can I deploy a new site without connecting to git and without
-            using AWS? <br />
+            How can I deploy a new website if I'm not an software engineer?{" "}
+            <br />
             My answer: In &nbsp;
             <a href="https://www.netlify.com/" target="_blank">
               www.netlify.com
