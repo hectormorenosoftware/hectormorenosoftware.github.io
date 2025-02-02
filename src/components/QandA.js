@@ -35,36 +35,47 @@ class QandA extends React.PureComponent {
             <a href="https://www.netlify.com/" target="_blank">
               www.netlify.com
             </a>
-            &nbsp; you can sign up by using your email, in the "Sites" section
-            right above the "Builds" section, if you scroll down all the way to
-            the bottom of the page there is an option for you to browse for a
-            folder in your computer, most of the time the UI code it's on a
-            "dist" or "build" folder in your computer. Remember that Netlify is
-            only for UI code which is HTML, CSS, and JavaScript, servers can't
-            be uploaded to Netlify. If you need API's I would recommend you to
-            use Node JS, Mongo DB, and Heroku, remember that Heroku &nbsp;
-            <a href="https://www.heroku.com/" target="_blank">
-              www.heroku.com
-            </a>{" "}
-            &nbsp; is a website like Netlify, but for servers only and it's
-            owned by Salesforce. It will be free of cost initially, but if you
-            choose to buy a domain name it will cost you $12 per year. After you
-            deploy your website by choosing a folder from your computer, on the
-            "Sites" section in Netlify click on your website and you will see a
-            url to your website in green that ends with the names
+            &nbsp; you can sign up by using your email, on the "Sites" section
+            right above the "Builds" section, if you scroll down you will see
+            that at the bottom of the page there is an option for you to browse
+            for a folder on your computer, most of the time the UI code it's on
+            a "dist" or "build" folder on your computer. Remember that Netlify
+            is only for UI code which is HTML, CSS, and JavaScript, servers
+            can't be uploaded to Netlify, but I will talk about your options at
+            the end of this answer. It will be free of cost initially, but if
+            you choose to buy a domain name it will cost you $12 per year. After
+            you deploy your website by choosing a folder from your computer, on
+            the "Sites" section on Netlify click on your website and you will
+            see a url to your website in green that ends with the names
             ".netlify.app". There will also be a "Set up your site" section
             right below your url with a "1, 2, 3" as a title. Follow the steps
             to buy a domain and to secure your website with HTTPS. Always
             remember that the navbar it's on the left side of the website it has
-            logo's and they need to be clicked for you to see text. Remember
-            that servers are used to connect to databases, there are many types
-            of servers, servers like Java Spring Boot, Node JS, or .Net are used
-            to connect to databases to turn data into JSON and "serve" the data
-            to a website that is made with HTML, CSS, and JavaScript. If you
-            want to migrate your data from you PostgreSQL, MySQL, or SQL
-            database to Mongo DB it will be very easy to do that using Node JS,
-            I want to remind you that Node JS uses C for all asynchronous
-            behavior in Node JS.
+            logo's and they need to be clicked for you to see text. If you made
+            new changes to your website and if you want to update your website
+            in Netlify, on the "Sites" section right above the "Builds" section
+            in the navbar, click on your website which should have a title
+            called "Manual deploys", once you are in the page that has a title
+            called "Site overview" right below "Site configuration" there is an
+            option called "Deploys" just click on "Deploys" and then in that
+            page you will see a section called "Deploys" it will ask you "Need
+            to update your site?" and it will give you the option to search for
+            a new folder in your computer to updated your current website.
+            Remember that servers are used to connect to databases, there are
+            many types of servers, servers like Java Spring Boot, Node JS, or
+            .Net are used to connect to databases to turn data into JSON and
+            "serve" the data to a website that is made with HTML, CSS, and
+            JavaScript. If you want to migrate your data from you PostgreSQL,
+            MySQL, or SQL database to Mongo DB it will be very easy to do that
+            using Node JS, I want to remind you that Node JS uses C for all
+            asynchronous behavior in Node JS. If you need API's I would
+            recommend you to use Node JS, Mongo DB, and Heroku, remember that
+            Heroku &nbsp;
+            <a href="https://www.heroku.com/" target="_blank">
+              www.heroku.com
+            </a>{" "}
+            &nbsp; is a website like Netlify, but for servers only and it's
+            owned by Salesforce.
           </p>
 
           <p className="ParagraphIDQandA">
