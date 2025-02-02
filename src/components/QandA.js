@@ -60,7 +60,7 @@ class QandA extends React.PureComponent {
             option called "Deploys" just click on "Deploys" and then in that
             page you will see a section called "Deploys" it will ask you "Need
             to update your site?" and it will give you the option to search for
-            a new folder in your computer to updated your current website.
+            a new folder in your computer to update your current website.
             Remember that servers are used to connect to databases, there are
             many types of servers, servers like Java Spring Boot, Node JS, or
             .Net are used to connect to databases to turn data into JSON and
