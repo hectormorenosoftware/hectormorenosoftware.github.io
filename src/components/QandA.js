@@ -65,7 +65,7 @@ class QandA extends React.PureComponent {
             many types of servers, servers like Java Spring Boot, Node JS, or
             .Net are used to connect to databases to turn data into JSON and
             "serve" the data to a website that is made with HTML, CSS, and
-            JavaScript. If you want to migrate your data from you PostgreSQL,
+            JavaScript. If you want to migrate your data from your PostgreSQL,
             MySQL, or SQL database to Mongo DB it will be very easy to do that
             using Node JS, I want to remind you that Node JS uses C for all
             asynchronous behavior in Node JS. If you need API's I would
