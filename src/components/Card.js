@@ -10,7 +10,7 @@ const Card = (props) => {
 
   return (
     <div className="Card" onClick={takeToUrl}>
-      <img src={props.image} alt="hello-world" />
+      <img src={props.image} alt={props.alt} />
     </div>
   );
 };

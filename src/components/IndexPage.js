@@ -46,13 +46,15 @@ class IndexPage extends React.PureComponent {
         <Header />
         <div className="Hero">
           <div className="HeroGroup">
-            <video
-              autoPlay={true}
-              loop={true}
-              muted={true}
-              playsInline={true}
-              src="https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/workvideo.mp4"
-            />
+            {window.innerWidth < 1000 ? null : (
+              <video
+                autoPlay={true}
+                loop={true}
+                muted={true}
+                playsInline={true}
+                src="https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/workvideo.mp4"
+              />
+            )}
 
             <h1>
               Welcome <br />
@@ -66,15 +68,51 @@ class IndexPage extends React.PureComponent {
             <h2>Companies</h2>
             <p style={{ textAlign: "center" }}>Click on images to see more</p>
             <div className="CardGroup">
-              <Card image={paramountLogo} url={"https://paramountplus.com"} />
-              <Card image={travelersLogo} url={"https://travelers.com"} />
-              <Card image={amexLogo} url={"https://americanexpress.com"} />
-              <Card image={appleLogo} url={"https://tv.apple.com/us"} />
-              <Card image={dhLogo} url={"https://digitalharmonic.com"} />
-              <Card image={vertexLogo} url={"https://vertexinc.com"} />
-              <Card image={ccLogo} url={"https://cardconnect.com"} />
-              <Card image={comcastLogo} url={"https://corporate.comcast.com"} />
-              <Card image={hexagonLogo} url={"https://hexagon.com"} />
+              <Card
+                image={paramountLogo}
+                url={"https://paramountplus.com"}
+                alt={"paramount-image"}
+              />
+              <Card
+                image={travelersLogo}
+                url={"https://travelers.com"}
+                alt={"travelers-image"}
+              />
+              <Card
+                image={amexLogo}
+                url={"https://americanexpress.com"}
+                alt={"amex-image"}
+              />
+              <Card
+                image={appleLogo}
+                url={"https://tv.apple.com/us"}
+                alt={"apple-image"}
+              />
+              <Card
+                image={dhLogo}
+                url={"https://digitalharmonic.com"}
+                alt={"dh-image"}
+              />
+              <Card
+                image={vertexLogo}
+                url={"https://vertexinc.com"}
+                alt={"vertex-image"}
+              />
+              <Card
+                image={ccLogo}
+                url={"https://cardconnect.com"}
+                alt={"cardconnect-image"}
+              />
+              <Card
+                image={comcastLogo}
+                url={"https://corporate.comcast.com"}
+                alt={"comcast-image"}
+              />
+              <Card
+                image={hexagonLogo}
+                url={"https://hexagon.com"}
+                alt={"hexagon-image"}
+              />
             </div>
           </div>
         </section>
