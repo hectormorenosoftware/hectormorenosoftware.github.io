@@ -149,7 +149,7 @@ a {
   &:hover {
     background-color: white;
     color: rgb(10, 102, 194);
-    border: 2px solid black;
+    border: 3px solid #0a66c2;
   }
 }
 
