@@ -52,7 +52,7 @@ class IndexPage extends React.PureComponent {
                 loop={true}
                 muted={true}
                 playsInline={true}
-                src="https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/workvideo.mp4"
+                src="https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/naturerecordingdjmavic.mp4"
               />
             )}
 
