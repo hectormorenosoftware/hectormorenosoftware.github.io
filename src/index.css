@@ -92,6 +92,31 @@ a {
   }
 }
 
+.HeroGroup {
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+  height: 67%;
+  background-color: rgba(0, 0, 0, 0.825);
+
+  @media (max-width: 640px) {
+    padding: 100px 20px;
+  }
+}
+
+#HeroIDTwo {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#HeroGroupID {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
 .ParagraphIDQandA {
   text-align: center;
 }
@@ -126,27 +151,6 @@ a {
     color: rgb(10, 102, 194);
     border: 2px solid black;
   }
-}
-
-#HeroIDTwo {
-  height: 100vh;
-  overflow: hidden;
-}
-
-.HeroGroup {
-  margin: 0 auto;
-  padding: 150px 50px;
-  text-align: center;
-  height: 67%;
-  background-color: rgba(0, 0, 0, 0.825);
-
-  @media (max-width: 640px) {
-    padding: 100px 20px;
-  }
-}
-
-#HeroGroupID {
-  height: 100vh;
 }
 
 @keyframes HeroAnimation {
