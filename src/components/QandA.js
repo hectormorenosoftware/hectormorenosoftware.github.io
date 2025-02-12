@@ -27,7 +27,7 @@ class QandA extends React.PureComponent {
           >
             Go Back
           </button>
-          <h1>Q and A</h1>
+          <h1 style={{ fontWeight: "350" }}>Q and A</h1>
           <p className="ParagraphIDQandA">
             How can I deploy a new website into the internet if I'm not a
             Software Engineer and I don't have experience in tech? <br />
