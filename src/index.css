@@ -119,18 +119,18 @@ a {
 
 .ParagraphIDQandA {
   text-align: center;
+  border: 1px solid black;
+  width: 75%;
+  border-radius: 15px;
+  background: rgb(241, 243, 245);
+  font-family: "Catamaran";
 }
 
 .HeroQAndA {
   background: white;
   overflow-x: hidden;
   color: black;
-  transition: 10.1s;
-
-  &:hover {
-    background: black;
-    color: white;
-  }
+  height: 100vh;
 }
 
 .BackButtonQandA {
