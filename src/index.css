@@ -124,6 +124,12 @@ a {
   border-radius: 15px;
   background: white;
   font-family: "Catamaran";
+  transition: 1s;
+
+  &:hover {
+    background: black;
+    color: white;
+  }
 }
 
 .HeroQAndA {
