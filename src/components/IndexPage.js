@@ -60,7 +60,7 @@ class IndexPage extends React.PureComponent {
               Welcome <br />
               to Hector Moreno's portfolio
             </h1>
-            <p>Please scroll down to see the companies he has worked for</p>
+            <p>Please scroll down to see the companies he has contracted for</p>
           </div>
         </div>
         <section id="companies">
