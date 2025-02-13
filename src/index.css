@@ -119,12 +119,12 @@ a {
 
 .ParagraphIDQandA {
   text-align: center;
-  border: 0.5px solid black;
   width: 90%;
-  border-radius: 15px;
+  border-radius: 5px;
   background: white;
   font-family: "Catamaran";
   font-weight: 250;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .HeroQAndA {
