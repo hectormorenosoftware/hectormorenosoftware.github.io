@@ -4,8 +4,11 @@ import styled from "styled-components";
 const FooterGroup = styled.div`
   background: #f1f3f5;
   padding: 50px 0;
-  display: grid;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: 100vh;
 `;
 const Text = styled.p`
   font-size: 24px;
