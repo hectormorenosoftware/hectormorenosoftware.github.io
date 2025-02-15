@@ -45,12 +45,12 @@ class QandA extends React.PureComponent {
             {" "}
             My answer: My nation "Spain" supplied the Americans during the
             American Revolution with desperately needed weapons, blankets,
-            shoes, naval ships, troops, shoes, blankets, gun powder, and money
-            to win the American Revolutionary War. My nation "Spain" is the
-            reason you have a nation which is now named the United States of
-            America, besides that we the Spanish from "Spain" established Texas
-            and California it was part of "New Spain" from 1520 to 1820 you can
-            Google these facts.
+            shoes, naval ships, troops, gun powder, and money to win the
+            American Revolutionary War. My nation "Spain" is the reason you have
+            a nation which is now named the United States of America, besides
+            that we the Spanish from "Spain" established Texas and California it
+            was part of "New Spain" from 1520 to 1820 you can Google these
+            facts.
           </p>
 
           <p className="ParagraphIDQandA">
