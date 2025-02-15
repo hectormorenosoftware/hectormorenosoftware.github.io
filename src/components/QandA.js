@@ -37,6 +37,23 @@ class QandA extends React.PureComponent {
 
           <p className="ParagraphIDQandA">
             {" "}
+            Question: Why do you think you can have a career in the United
+            States of America, if you are not American?
+          </p>
+
+          <p className="ParagraphIDQandA">
+            {" "}
+            My answer: My nation "Spain" supplied the Americans during the
+            American Revolution with desperately needed weapons, blankets,
+            shoes, and money to win the American Revolutionary War. My nation
+            "Spain" is the reason you have a nation which is now named the
+            United States of America, besides that we the Spanish from "Spain"
+            established Texas and California it was part of "New Spain" from
+            1520 to 1820 you can Google these facts.
+          </p>
+
+          <p className="ParagraphIDQandA">
+            {" "}
             Question: Why do I choose React JS over Vue JS, Angular 18, or
             Angular 19?{" "}
           </p>
@@ -96,41 +113,6 @@ class QandA extends React.PureComponent {
             candidate can manipulate data in the server and if the candidate
             knows how to write and read into a database. I also check if the
             candidate knows how to test API's before they are in production.
-          </p>
-          <p className="ParagraphIDQandA">
-            Question: My laptop and my desktop computer sometimes gets very slow
-            and sometimes it shuts down, why does this happen?{" "}
-          </p>
-          <p className="ParagraphIDQandA">
-            My answer: It's because you have too many desktop applications open
-            and because you have too many Google Chrome, Firefox, Safari,
-            Microsoft Edge, or Internet Explorer browser windows or browser tabs
-            open at the same time. There are a lot of videos in YouTube that can
-            help you fix this issue, it shouldn't take more than 10 minutes to
-            fix this issue, and you shouldn't need an engineer to help you. I
-            would recommend to have only two Safari, Google Chrome, Firefox,
-            Microsoft Edge, or Internet Explorer tabs or windows open at the
-            same time, but no more than two. I would also recommend to not have
-            more than two desktop applications open at the same time such as
-            Microsoft Word and Microsoft Power Point. <br />
-            Examples of browsers: Google Chrome, Internet Explorer, Safari,
-            Firefox, and Microsoft Edge. <br />
-            Examples of desktop apps: Microsoft Excel, Microsoft Word, and
-            Microsoft Power Point.
-          </p>
-          <p className="ParagraphIDQandA">
-            Question: My iphone and my android phone ran out of memory which
-            makes it impossible for me to take new pictures, I don't want to buy
-            a new phone what can I do about this? Are there any options that are
-            affordable?{" "}
-          </p>
-          <p className="ParagraphIDQandA">
-            My answer: Yes there is an affordable option, you can use iCloud for
-            iOS or Google Cloud Photos and save all of your photos and videos
-            there. After that you can delete every picture from your phone since
-            it's saved already in iCloud or Google Cloud Photos. iCloud and
-            Google Cloud is very affordable is like having a USB Hard Drive in
-            the internet of at least 100GB for like $5 per month.
           </p>
         </div>
       </div>
