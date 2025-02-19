@@ -2,6 +2,7 @@ import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
+import Loading from "./Loading";
 import Card from "./Card";
 import Section from "./Section";
 import Header from "./HeaderSection";
@@ -36,13 +37,7 @@ class IndexPage extends React.PureComponent {
     const { loading } = this.props;
 
     if (loading === true) {
-      return (
-        <div className="Hero" id="HeroIDTwo">
-          <div className="HeroGroup" id="HeroGroupID">
-            <p>Loading Hector Moreno's website please wait ...</p>
-          </div>
-        </div>
-      );
+      return <Loading />;
     }
 
     return (

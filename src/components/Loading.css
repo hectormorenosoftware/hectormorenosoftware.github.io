@@ -1,0 +1,12 @@
+#HeroIDTwo {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#HeroGroupID {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
