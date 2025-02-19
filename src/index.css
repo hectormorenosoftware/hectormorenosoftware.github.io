@@ -96,7 +96,7 @@ a {
   margin: 0 auto;
   padding: 150px 50px;
   text-align: center;
-  height: 67%;
+  height: 50rem;
   background-color: rgba(0, 0, 0, 0.825);
 
   @media (max-width: 640px) {

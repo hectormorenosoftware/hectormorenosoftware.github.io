@@ -29,6 +29,10 @@ class IndexPage extends React.PureComponent {
   }
 
   render() {
+    //I used <section> tags because <div> and <section> are both block elements
+    //I just wanted to see if they would behave the same way since both are
+    //block elements, but they are named different.
+
     const { loading } = this.props;
 
     if (loading === true) {
