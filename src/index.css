@@ -100,7 +100,7 @@ a {
   background-color: rgba(0, 0, 0, 0.825);
 
   @media (max-width: 640px) {
-    padding: 100px 20px;
+    padding: 300px 20px;
   }
 }
 
