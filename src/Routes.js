@@ -4,7 +4,7 @@ import { Switch, withRouter, Route } from "react-router-dom";
 import IndexPage from "./components/IndexPage";
 import QandA from "./components/QandA";
 
-class App extends React.PureComponent {
+class Routes extends React.PureComponent {
   render() {
     return (
       <Switch>
@@ -16,4 +16,4 @@ class App extends React.PureComponent {
   }
 }
 
-export default withRouter(App);
+export default withRouter(Routes);
