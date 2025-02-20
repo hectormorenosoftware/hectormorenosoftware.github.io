@@ -81,11 +81,22 @@ class QandA extends React.PureComponent {
           </p>
           <p className="ParagraphIDQandA">
             My answer: If you want control over your data I recommend you to use
-            ngrok, it will allow you to write and read data from your own
-            machine in your own building if you use Node JS. It will also allow
-            you to create as many endpoints(also known as API's) as you would
-            like, remember that your machine and your router will be used to
-            serve the data including your website or you could use Mongo DB.
+            &nbsp;
+            <a href="https://ngrok.com/" target="_blank">
+              www.ngrok.com
+            </a>
+            &nbsp;it will allow you to write and read data from your own machine
+            in your own building if you use Node JS. I want to remind you that
+            MySQL, PostgreSQL, SQL, and Mongo DB will always give you JSON data
+            to allow your server of choice(Spring Boot Java, .NET, or Node JS)
+            to send JSON to the UI. Remember that ngrok allows you to create
+            API's and allows you to serve data over the internet by using your
+            internet router as a tunnel which could save you a lot of money.
+            This means that all of your JSON data will be saved in your machine
+            instead of someone else's machine and that every API request will be
+            handled by your internet router. Remember that Node JS uses libuv to
+            handle all asynchronous requests in Node JS, libuv is a library in
+            C.
           </p>
           <p className="ParagraphIDQandA">
             {" "}
