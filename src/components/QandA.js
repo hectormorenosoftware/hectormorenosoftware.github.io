@@ -36,7 +36,7 @@ class QandA extends React.PureComponent {
           </h1>
 
           <p className="ParagraphIDQandA">
-            Question: What makes your stand-out over the rest of candidates?
+            Question: What makes you stand-out over the rest of candidates?
           </p>
           <p className="ParagraphIDQandA">
             My answer: I built Apple TV+ alone, you can verify this at Apple
