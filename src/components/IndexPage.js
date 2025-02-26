@@ -53,11 +53,8 @@ class IndexPage extends React.PureComponent {
               src="https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/dronerecording.mp4"
             />
 
-            <h1>
-              Welcome <br />
-              to Hector Moreno's portfolio website
-            </h1>
-            <p>Please scroll down to see the companies he has contracted for</p>
+            <h1>Welcome!</h1>
+            <p>Please scroll down to see the companies I have contracted for</p>
           </div>
         </div>
         <section id="companies">
