@@ -36,22 +36,19 @@ class QandA extends React.PureComponent {
           </h1>
 
           <p className="ParagraphIDQandA">
-            {" "}
-            Question: Why do you think you can have a career in the United
-            States of America, if you are not American?
+            Question: What makes your stand-out over the rest of candidates?
           </p>
-
           <p className="ParagraphIDQandA">
-            {" "}
-            My answer: My nation "Spain" supplied the Americans during the
-            American Revolution weapons, money, naval ships, troops, and
-            supplies to win the American Revolution against the British Empire.
-            My nation "Spain" is the reason you have a nation which is now named
-            the United States of America, besides that we the Spanish from
-            "Spain" established Texas and California it was part of "New Spain"
-            from 1520 to 1820 you can Google these facts.
+            My answer: I built Apple TV+ alone, you can verify this at Apple
+            Inc. through Tim Cook.
           </p>
-
+          <p className="ParagraphIDQandA">
+            Question: What makes you better than other candidates?
+          </p>
+          <p className="ParagraphIDQandA">
+            My answer: That I can code in front of you without looking at Google
+            all of the time.
+          </p>
           <p className="ParagraphIDQandA">
             {" "}
             Question: Why do I choose React JS over Vue JS, Angular 18, or
@@ -98,21 +95,7 @@ class QandA extends React.PureComponent {
             handle all asynchronous requests in Node JS, libuv is a library in
             C.
           </p>
-          <p className="ParagraphIDQandA">
-            {" "}
-            Question: Do you have your college transcript with you?
-          </p>
-          <p className="ParagraphIDQandA">
-            My answer: I do, I graduated from the University of Texas at
-            Arlington with a B.S. in Computer Science in 2015 my minor is also
-            Computer Science I do have my transcript with me wherever I go.
-          </p>
-          <p className="ParagraphIDQandA">Question: Do you have a github? </p>
-          <p className="ParagraphIDQandA">
-            My answer: github.com/hectormorenosoftware <br />
-            Every single repository in my github has a url in the README.md
-            section to show you the website live in the internet.
-          </p>
+
           <p className="ParagraphIDQandA">
             Question: How do you test potential candidates for UI Development or
             Back-End Development?
