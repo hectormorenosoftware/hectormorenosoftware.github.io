@@ -8,7 +8,6 @@ const FooterGroup = styled.div`
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  height: 100vh;
 `;
 const Text = styled.p`
   font-size: 24px;
@@ -28,7 +27,7 @@ const Button = styled.button`
   font-weight: 600;
   font-size: 24px;
   justify-self: center;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 0.8s;
   cursor: pointer;
   width: 20rem;
   height: 4rem;

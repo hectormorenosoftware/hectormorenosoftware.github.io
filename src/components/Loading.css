@@ -1,8 +1,3 @@
-#HeroIDTwo {
-  height: 100vh;
-  overflow: hidden;
-}
-
 #HeroGroupID {
   display: flex;
   flex-direction: column;

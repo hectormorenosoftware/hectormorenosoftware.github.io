@@ -11,7 +11,7 @@ class Loading extends React.PureComponent {
 
   render() {
     return (
-      <div className="Hero" id="HeroIDTwo">
+      <div className="Hero">
         <div className="HeroGroup" id="HeroGroupID">
           <p>Loading website...</p>
         </div>
