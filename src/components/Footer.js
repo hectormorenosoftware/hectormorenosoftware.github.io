@@ -13,8 +13,6 @@ const Text = styled.p`
   font-size: 24px;
   font-weight: 600;
   color: #486791;
-  max-width: 500px;
-  margin: 0 auto;
   text-align: center;
 `;
 const Button = styled.button`
@@ -46,8 +44,6 @@ const Copyright = styled.div`
   font-size: 15px;
   word-wrap: break-word;
   text-align: center;
-  display: flex;
-  justify-content: center;
 `;
 
 const Footer = ({ children }) => {
