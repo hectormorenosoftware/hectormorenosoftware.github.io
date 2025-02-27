@@ -2,22 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const SectionGroup = styled.div`
-  background-color: black;
-  height: 25rem;
-  background-size: cover;
   display: grid;
   grid-template-rows: 300px auto;
   grid-gap: 20px;
-  position: relative;
-  @media (max-width: 640px) {
-    height: 21rem;
-  }
+  background-color: black;
+  padding: 70px 20px;
 `;
 
 const SectionTitleGroup = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 0 40px;
 `;
@@ -25,7 +19,7 @@ const SectionTitleGroup = styled.div`
 const SectionTitle = styled.h3`
   color: white;
   font-size: 60px;
-  margin: 0;
+  margin: 20px 20px;
   line-height: 1.2;
 
   @media (max-width: 720px) {
