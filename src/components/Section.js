@@ -10,10 +10,7 @@ const SectionGroup = styled.div`
 `;
 
 const SectionTitleGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 40px;
+  text-align: center;
 `;
 
 const SectionTitle = styled.h3`
