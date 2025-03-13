@@ -5,38 +5,15 @@ const FooterGroup = styled.div`
   background: #f1f3f5;
   padding: 50px 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
-  align-items: center;
+  justify-content: center;
 `;
 const Text = styled.p`
   font-size: 24px;
   font-weight: 600;
   color: #486791;
   text-align: center;
-`;
-const Button = styled.button`
-  background: #0a66c2;
-  box-shadow: 0px 10px 20px rgba(101, 41, 255, 0.15);
-  border-radius: 30px;
-  color: white;
-  border: none;
-  padding: 16px 60px;
-  font-weight: 600;
-  font-size: 24px;
-  justify-self: center;
-  transition: 0.8s;
-  cursor: pointer;
-  width: 20rem;
-  height: 4rem;
-
-  &:hover {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px);
-    color: #0a66c2;
-    background: white;
-    border: 3px solid #0a66c2;
-  }
 `;
 
 const Copyright = styled.div`
@@ -71,18 +48,20 @@ const Footer = ({ children }) => {
   };
 
   return (
-    <FooterGroup>
+    <React.Fragment>
       <Text>
-        Contact Hector anyway you would like by tapping on a button below or
-        clicking.
+        Contact Hector anyway you would like by tapping or clicking on any of
+        the icons below.
       </Text>
-      <Button onClick={openLinkedIn}>Linked In</Button>
-      <Button onClick={openGithub}>Github</Button>
-      <Button onClick={sendEmail}>Send Email</Button>
-      <Button onClick={callPhoneNumber}>Call Phone</Button>
-      <Button onClick={sendWhatsapp}>WhatsApp</Button>
+      <FooterGroup>
+        <i className="fa-brands fa-linkedin fa-2x" onClick={openLinkedIn}></i>
+        <i className="fa-brands fa-github fa-2x" onClick={openGithub}></i>
+        <i className="fa-solid fa-envelope fa-2x" onClick={sendEmail}></i>
+        <i className="fa-solid fa-phone fa-2x" onClick={callPhoneNumber}></i>
+        <i className="fa-brands fa-whatsapp fa-2x" onClick={sendWhatsapp}></i>
+      </FooterGroup>
       <Copyright>{children}</Copyright>
-    </FooterGroup>
+    </React.Fragment>
   );
 };
 

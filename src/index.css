@@ -31,6 +31,10 @@ a {
   font-weight: 600;
 }
 
+i {
+  cursor: pointer;
+}
+
 .FlexColumn {
   display: flex;
   flex-direction: column;
