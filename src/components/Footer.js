@@ -47,6 +47,16 @@ const Footer = ({ children }) => {
     return window.open("https://api.whatsapp.com/send?phone=4152120456");
   };
 
+  const routeToStackOverflowProfile = () => {
+    return window.open("https://stackoverflow.com/users/5167502/hjm");
+  };
+
+  const routeToFacebookProfile = () => {
+    return window.open(
+      "https://www.facebook.com/people/Hector-Moreno/pfbid02vhDX2CRTqKJ3UGbstXUiRGuZKHgco7eiphRqao7QEzJzCTCLtsnYdV8taf75XFyTl/"
+    );
+  };
+
   return (
     <React.Fragment>
       <Text>
@@ -54,11 +64,62 @@ const Footer = ({ children }) => {
         the icons below.
       </Text>
       <FooterGroup>
-        <i className="fa-brands fa-linkedin fa-2x" onClick={openLinkedIn}></i>
-        <i className="fa-brands fa-github fa-2x" onClick={openGithub}></i>
-        <i className="fa-solid fa-envelope fa-2x" onClick={sendEmail}></i>
-        <i className="fa-solid fa-phone fa-2x" onClick={callPhoneNumber}></i>
-        <i className="fa-brands fa-whatsapp fa-2x" onClick={sendWhatsapp}></i>
+        <i
+          className={
+            window.innerWidth <= 375
+              ? "fa-brands fa-linkedin fa-1x"
+              : "fa-brands fa-linkedin fa-2x"
+          }
+          onClick={openLinkedIn}
+        ></i>
+        <i
+          className={
+            window.innerWidth <= 375
+              ? "fa-brands fa-github fa-1x"
+              : "fa-brands fa-github fa-2x"
+          }
+          onClick={openGithub}
+        ></i>
+        <i
+          className={
+            window.innerWidth <= 375
+              ? "fa-brands fa-stack-overflow fa-1x"
+              : "fa-brands fa-stack-overflow fa-2x"
+          }
+          onClick={routeToStackOverflowProfile}
+        ></i>
+        <i
+          className={
+            window.innerWidth <= 375
+              ? "fa-brands fa-facebook fa-1x"
+              : "fa-brands fa-facebook fa-2x"
+          }
+          onClick={routeToFacebookProfile}
+        ></i>
+        <i
+          className={
+            window.innerWidth <= 375
+              ? "fa-solid fa-phone fa-1x"
+              : "fa-solid fa-phone fa-2x"
+          }
+          onClick={callPhoneNumber}
+        ></i>
+        <i
+          className={
+            window.innerWidth <= 375
+              ? "fa-solid fa-envelope fa-1x"
+              : "fa-solid fa-envelope fa-2x"
+          }
+          onClick={sendEmail}
+        ></i>
+        <i
+          className={
+            window.innerWidth <= 375
+              ? "fa-brands fa-whatsapp fa-1x"
+              : "fa-brands fa-whatsapp fa-2x"
+          }
+          onClick={sendWhatsapp}
+        ></i>
       </FooterGroup>
       <Copyright>{children}</Copyright>
     </React.Fragment>

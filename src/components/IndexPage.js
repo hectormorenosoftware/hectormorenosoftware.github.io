@@ -119,7 +119,7 @@ class IndexPage extends React.PureComponent {
         </section>
         <section id="contact">
           <Footer>
-            <p>&copy; Hector Moreno's Portfolio </p>
+            <p>&copy; Hector Moreno's Portfolio Website </p>
           </Footer>
         </section>
       </div>

@@ -10,7 +10,6 @@ class Routes extends React.PureComponent {
       <Switch>
         <Route exact path="/" render={() => <IndexPage />} />
         <Route exact path="/QandA" render={() => <QandA />} />
-        <IndexPage />
       </Switch>
     );
   }
