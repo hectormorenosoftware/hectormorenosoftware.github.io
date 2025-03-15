@@ -54,7 +54,7 @@ class IndexPage extends React.PureComponent {
             />
 
             <h1>Welcome!</h1>
-            <p style={{ animationDelay: "2.5s" }}>
+            <p style={{ animationDelay: "4s" }}>
               Please scroll down to see the companies I have contracted for
             </p>
           </div>
