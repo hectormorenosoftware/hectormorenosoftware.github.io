@@ -31,7 +31,7 @@ class IndexPage extends React.PureComponent {
     return (
       <div>
         <Header />
-        <div className="Hero" style={{ height: "100vh" }}>
+        <div className="Hero" style={{ height: "100vh", overflowY: "hidden" }}>
           <div className="HeroGroup">
             <video
               autoPlay={true}
