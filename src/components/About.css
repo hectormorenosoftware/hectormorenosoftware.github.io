@@ -1,0 +1,36 @@
+.SectionGroup {
+  display: grid;
+  grid-template-rows: 200px auto;
+  grid-gap: 20px;
+  background-color: black;
+  justify-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.SectionTitleGroup {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SectionTitle {
+  color: white;
+  font-size: 60px;
+  margin: 20px 20px;
+  line-height: 1.2;
+
+  @media (max-width: 720px) {
+    font-size: 40px;
+  }
+}
+
+.SectionText {
+  color: white;
+  width: 75%;
+
+  @media (max-width: 720px) {
+    font-size: 16px;
+  }
+}

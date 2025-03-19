@@ -15,13 +15,28 @@ class Header extends React.PureComponent {
     return history.push("/QandA");
   };
 
+  goToCompaniesPage = () => {
+    const { history } = this.props;
+    return history.push("/Companies");
+  };
+
+  goToAbout = () => {
+    const { history } = this.props;
+    return history.push("/about");
+  };
+
+  goToContact = () => {
+    const { history } = this.props;
+    return history.push("/contact");
+  };
+
   render() {
     return (
       <div className="Header">
         <div className="HeaderGroup">
-          <a href="#companies">Companies</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a onClick={this.goToCompaniesPage}>Companies</a>
+          <a onClick={this.goToAbout}>About</a>
+          <a onClick={this.goToContact}>Contact</a>
           <a onClick={this.goToQandAPage}>Q and A</a>
         </div>
       </div>

@@ -55,7 +55,7 @@ i {
     opacity: 0;
     animation: HeroAnimation;
     animation-duration: 3s;
-    animation-delay: 1.2s;
+    animation-delay: 0.2s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 
