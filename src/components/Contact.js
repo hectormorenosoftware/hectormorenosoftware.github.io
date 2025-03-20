@@ -115,7 +115,7 @@ class Contact extends React.PureComponent {
                 ? "fa-brands fa-whatsapp fa-1x"
                 : "fa-brands fa-whatsapp fa-2x"
             }
-            onClick={this.endWhatsapp}
+            onClick={this.sendWhatsapp}
           ></i>
         </div>
         <div className="CopyRightGroup">

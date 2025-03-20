@@ -182,3 +182,23 @@ i {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.ContactMeButton {
+  position: relative;
+  width: 280px;
+  height: 45px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 600;
+  transition: 0.5s;
+  font-family: "Lato";
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

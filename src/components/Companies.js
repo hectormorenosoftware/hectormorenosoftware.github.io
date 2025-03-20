@@ -33,8 +33,10 @@ class Companies extends React.PureComponent {
           >
             Go Back
           </button>
-          <h2>Companies</h2>
-          <p style={{ textAlign: "center" }}>Click on images to see more</p>
+          <h2>Companies I have contracted for</h2>
+          <p style={{ textAlign: "center" }}>
+            Click or tap on images to see more
+          </p>
         </div>
         <div className="CardGroup">
           <Card

@@ -17,6 +17,10 @@ class IndexPage extends React.PureComponent {
     return null;
   }
 
+  routeToContactMe = () => {
+    this.props.history.push("/contact");
+  };
+
   render() {
     //I used <section> tags because <div> and <section> are both block elements
     //I just wanted to see if they would behave the same way since both are
@@ -32,7 +36,7 @@ class IndexPage extends React.PureComponent {
       <div>
         <Header />
         <div className="Hero" style={{ height: "100vh", overflowY: "hidden" }}>
-          <div className="HeroGroup">
+          <div className="HeroGroup" style={{ height: "100vh" }}>
             <video
               autoPlay={true}
               loop={true}
@@ -40,11 +44,17 @@ class IndexPage extends React.PureComponent {
               playsInline={true}
               src="https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/dronerecording.mp4"
             />
-
             <h1>Welcome!</h1>
             <p style={{ animationDelay: "4s" }}>
               Please click on the navbar to see more
             </p>
+            <button
+              type="button"
+              className="ContactMeButton"
+              onClick={this.routeToContactMe}
+            >
+              Contact
+            </button>
           </div>
         </div>
       </div>
