@@ -95,21 +95,21 @@ i {
 }
 
 .HeroGroup {
-  padding: 300px 50px;
+  padding: 250px 50px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.825);
   user-select: none;
 
   @media (max-width: 640px) {
-    padding: 400px 20px;
-  }
-
-  @media (max-width: 400px) {
     padding: 350px 20px;
   }
 
+  @media (max-width: 400px) {
+    padding: 320px 20px;
+  }
+
   @media (max-width: 380px) {
-    padding: 250px 20px;
+    padding: 220px 20px;
   }
 }
 
