@@ -42,7 +42,7 @@ class IndexPage extends React.PureComponent {
             />
             <h1>Welcome!</h1>
             <p style={{ animationDelay: "4s" }}>
-              Please click on the navbar to see more
+              Please tap or click on the navbar to see more
             </p>
             <button
               type="button"
