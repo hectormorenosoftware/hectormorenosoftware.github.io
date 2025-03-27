@@ -121,6 +121,7 @@ i {
   font-family: "Catamaran";
   font-weight: 250;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  margin: 25px 25px;
 }
 
 .HeroQAndA {
@@ -166,6 +167,15 @@ i {
   text-align: center;
   font-weight: 700;
 }
+
+.Cards h3 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+}
+
+/* The repeat method is the same as the .map method in Javascript. */
 
 .CardGroup {
   display: grid;

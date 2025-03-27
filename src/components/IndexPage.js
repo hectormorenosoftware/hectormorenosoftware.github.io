@@ -17,8 +17,8 @@ class IndexPage extends React.PureComponent {
     return null;
   }
 
-  routeToContactMe = () => {
-    this.props.history.push("/contact");
+  routeToCompanies = () => {
+    this.props.history.push("/companies");
   };
 
   render() {
@@ -47,9 +47,9 @@ class IndexPage extends React.PureComponent {
             <button
               type="button"
               className="ContactMeButton"
-              onClick={this.routeToContactMe}
+              onClick={this.routeToCompanies}
             >
-              Contact
+              Learn More
             </button>
           </div>
         </div>

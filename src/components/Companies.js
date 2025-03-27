@@ -2,15 +2,6 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Card from "./Card";
-import amexLogo from "../images/amex.png";
-import appleLogo from "../images/applecomputers.jpg";
-import dhLogo from "../images/dh.jpg";
-import vertexLogo from "../images/vertex.jpeg";
-import ccLogo from "../images/cardconnect.jpeg";
-import comcastLogo from "../images/comcast.jpeg";
-import hexagonLogo from "../images/hexagonusfederal.jpeg";
-import travelersLogo from "../images/travelers.png";
-import paramountLogo from "../images/paramount.png";
 
 class Companies extends React.PureComponent {
   constructor(props) {
@@ -40,49 +31,85 @@ class Companies extends React.PureComponent {
         </div>
         <div className="CardGroup">
           <Card
-            image={paramountLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/paramount.png"
+            }
             url={"https://paramountplus.com"}
             alt={"paramount-image"}
+            companyName={"Paramount+"}
+            description={"Click or tap to see more"}
           />
           <Card
-            image={travelersLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/travelers.png"
+            }
             url={"https://travelers.com"}
             alt={"travelers-image"}
+            companyName={"Travelers Insurance"}
+            description={"Click or tap to see more"}
           />
           <Card
-            image={amexLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/amex.png"
+            }
             url={"https://americanexpress.com"}
             alt={"amex-image"}
+            companyName={"American Express"}
+            description={"Click or tap to see more"}
           />
           <Card
-            image={appleLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/applecomputers.jpg"
+            }
             url={"https://tv.apple.com/us"}
             alt={"apple-image"}
+            companyName={"Apple Inc."}
+            description={"Click or tap to see more"}
           />
           <Card
-            image={dhLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/dh.jpg"
+            }
             url={"https://digitalharmonic.com"}
             alt={"dh-image"}
+            companyName={"Digital Harmonic"}
+            description={"Click or tap to see more"}
           />
           <Card
-            image={vertexLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/vertex.jpeg"
+            }
             url={"https://vertexinc.com"}
             alt={"vertex-image"}
+            companyName={"Vertex"}
+            description={"Click or tap to see more"}
           />
           <Card
-            image={ccLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/cardconnect.jpeg"
+            }
             url={"https://cardconnect.com"}
             alt={"cardconnect-image"}
+            companyName={"Card Connect"}
+            description={"Click or tap to see more"}
           />
           <Card
-            image={comcastLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/comcast.jpeg"
+            }
             url={"https://corporate.comcast.com"}
             alt={"comcast-image"}
+            companyName={"Comcast"}
+            description={"Click or tap to see more"}
           />
           <Card
-            image={hexagonLogo}
+            image={
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/comcast.jpeg"
+            }
             url={"https://hexagon.com"}
             alt={"hexagon-image"}
+            companyName={"Hexagon U.S. Federal"}
+            description={"Click or tap to see more"}
           />
         </div>
       </div>
