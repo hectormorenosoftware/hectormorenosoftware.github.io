@@ -104,7 +104,7 @@ class Companies extends React.PureComponent {
           />
           <Card
             image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/comcast.jpeg"
+              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/hexagonusfederal.jpeg"
             }
             url={"https://hexagon.com"}
             alt={"hexagon-image"}
