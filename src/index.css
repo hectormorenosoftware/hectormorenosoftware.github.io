@@ -198,17 +198,17 @@ i {
   width: 280px;
   height: 45px;
   border-radius: 20px;
-  border: 1px solid white;
+  border: 2.75px solid white;
   cursor: pointer;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: transparent;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 325;
   transition: 0.5s;
   font-family: "Lato";
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 }
