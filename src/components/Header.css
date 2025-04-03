@@ -2,41 +2,26 @@
   position: fixed;
   width: 100%;
   padding: 15px 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(20px);
+  background-color: black;
   z-index: 1;
+  transition: 1.2s;
 
   a {
     color: white;
-    font-weight: 300;
+    font-weight: 325;
     cursor: pointer;
-    transition: 0.2s;
-
-    &:hover {
-      font-weight: 500;
-    }
-  }
-
-  button {
-    padding: 8px 20px;
-    font-size: 20px;
-    background: #56ccf2;
-    border: none;
-    font-weight: 700;
-    border-radius: 10px;
-    outline: none;
-    cursor: pointer;
-    transition: 1s;
-
-    &:hover {
-      background: white;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-      transform: translateY(-3px);
-    }
   }
 
   @media (max-width: 640px) {
     padding: 15px 0;
+  }
+
+  &:hover {
+    background-color: white;
+
+    a {
+      color: black;
+    }
   }
 }
 
