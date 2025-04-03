@@ -40,15 +40,15 @@ class QandA extends React.PureComponent {
               in one paragraph?
             </h3>
             <p>
-              My answer: The so called "UI" which is a website expects "data"
-              which is always in JSON format, this JSON is saved in a so called
-              "database" which can be a SQL, MySQL, Mongo DB, PostgreSQL, or any
-              cloud database. The so called "server" reads the "database" and
-              formats the data into "JSON" format and sends it to the "UI",
-              there are many kinds of servers, there are .NET, Java Spring Boot,
-              and Node JS servers and their job is always the same. The job of a
-              "server" is to "serve" "JSON" data to the "UI" and the "UI" code
-              to the user.
+              My answer: The job of a "server" is to "serve" "JSON" data to the
+              "UI" and the "UI" code to the user. The so called "UI" which is a
+              website that expects "data" which is always in JSON format, this
+              JSON is saved in a so called "database" which can be a SQL, MySQL,
+              Mongo DB, PostgreSQL, or any cloud database. The so called
+              "server" reads the "database" and formats the data into "JSON"
+              format and sends it to the "UI", there are many kinds of servers,
+              there are .NET, Java Spring Boot, and Node JS servers and their
+              job is always the same.
             </p>
           </div>
 
