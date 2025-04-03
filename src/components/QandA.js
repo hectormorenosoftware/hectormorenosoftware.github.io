@@ -34,22 +34,21 @@ class QandA extends React.PureComponent {
           >
             Q and A
           </h1>
-
           <div className="ParagraphIDQandA">
             <h3>
-              Question: What makes you stand-out over the rest of candidates?
+              Question: Can you explain what is Full-Stack Software Engineering
+              in one paragraph?
             </h3>
             <p>
-              My answer: I built Apple TV+ alone, you can verify this at Apple
-              Inc. through Tim Cook.
-            </p>
-          </div>
-
-          <div className="ParagraphIDQandA">
-            <h3>Question: What makes you better than other candidates?</h3>
-            <p>
-              My answer: That I can code in front of you without looking at
-              Google all of the time.
+              My answer: The so called "UI" which is a website expects "data"
+              which is always in JSON format, this JSON is saved in a so called
+              "database" which can be a SQL, MySQL, Mongo DB, PostgreSQL, or any
+              cloud database. The so called "server" reads the "database" and
+              formats the data into "JSON" format and sends it to the "UI",
+              there are many kinds of servers, there are .NET, Java Spring Boot,
+              and Node JS servers and their job is always the same. The job of a
+              "server" is to "serve" "JSON" data to the "UI" and the "UI" code
+              to the user.
             </p>
           </div>
 

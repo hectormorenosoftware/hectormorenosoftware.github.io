@@ -28,18 +28,8 @@ class Contact extends React.PureComponent {
     return window.open("mailto:hectormorenosoftware@gmail.com");
   };
 
-  sendWhatsapp = () => {
-    return window.open("https://api.whatsapp.com/send?phone=4152120456");
-  };
-
   routeToStackOverflowProfile = () => {
     return window.open("https://stackoverflow.com/users/5167502/hjm");
-  };
-
-  routeToFacebookProfile = () => {
-    return window.open(
-      "https://www.facebook.com/people/Hector-Moreno/pfbid02vhDX2CRTqKJ3UGbstXUiRGuZKHgco7eiphRqao7QEzJzCTCLtsnYdV8taf75XFyTl/"
-    );
   };
 
   goBackToRoot = () => {
@@ -57,10 +47,26 @@ class Contact extends React.PureComponent {
           Go Back
         </button>
         <p style={{ textAlign: "center" }}>
-          Contact Hector anyway you would like by tapping or clicking on any of
-          the icons below.
+          Contact me by tapping or clicking on any of the icons below from 9am
+          to 5pm CST.
         </p>
         <div className="IconFlexBox">
+          <i
+            className={
+              window.innerWidth <= 375
+                ? "fa-solid fa-phone fa-1x"
+                : "fa-solid fa-phone fa-2x"
+            }
+            onClick={this.callPhoneNumber}
+          ></i>
+          <i
+            className={
+              window.innerWidth <= 375
+                ? "fa-solid fa-envelope fa-1x"
+                : "fa-solid fa-envelope fa-2x"
+            }
+            onClick={this.sendEmail}
+          ></i>
           <i
             className={
               window.innerWidth <= 375
@@ -84,38 +90,6 @@ class Contact extends React.PureComponent {
                 : "fa-brands fa-stack-overflow fa-2x"
             }
             onClick={this.routeToStackOverflowProfile}
-          ></i>
-          <i
-            className={
-              window.innerWidth <= 375
-                ? "fa-brands fa-facebook fa-1x"
-                : "fa-brands fa-facebook fa-2x"
-            }
-            onClick={this.routeToFacebookProfile}
-          ></i>
-          <i
-            className={
-              window.innerWidth <= 375
-                ? "fa-solid fa-phone fa-1x"
-                : "fa-solid fa-phone fa-2x"
-            }
-            onClick={this.callPhoneNumber}
-          ></i>
-          <i
-            className={
-              window.innerWidth <= 375
-                ? "fa-solid fa-envelope fa-1x"
-                : "fa-solid fa-envelope fa-2x"
-            }
-            onClick={this.sendEmail}
-          ></i>
-          <i
-            className={
-              window.innerWidth <= 375
-                ? "fa-brands fa-whatsapp fa-1x"
-                : "fa-brands fa-whatsapp fa-2x"
-            }
-            onClick={this.sendWhatsapp}
           ></i>
         </div>
         <div className="CopyRightGroup">
