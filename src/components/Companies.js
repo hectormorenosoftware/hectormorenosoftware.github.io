@@ -2,6 +2,15 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Card from "./Card";
+import amexLogo from "../images/amex.png";
+import appleLogo from "../images/applecomputers.jpg";
+import dhLogo from "../images/dh.jpg";
+import vertexLogo from "../images/vertex.jpeg";
+import ccLogo from "../images/cardconnect.jpeg";
+import comcastLogo from "../images/comcast.jpeg";
+import hexagonLogo from "../images/hexagonusfederal.jpeg";
+import travelersLogo from "../images/travelers.png";
+import paramountLogo from "../images/paramount.png";
 
 class Companies extends React.PureComponent {
   constructor(props) {
@@ -31,81 +40,63 @@ class Companies extends React.PureComponent {
         </div>
         <div className="CardGroup">
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/paramount.png"
-            }
+            image={paramountLogo}
             url={"https://paramountplus.com"}
             alt={"paramount-image"}
             companyName={"Paramount+"}
             description={"Click or tap to see more"}
           />
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/travelers.png"
-            }
+            image={travelersLogo}
             url={"https://travelers.com"}
             alt={"travelers-image"}
             companyName={"Travelers Insurance"}
             description={"Click or tap to see more"}
           />
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/amex.png"
-            }
+            image={amexLogo}
             url={"https://americanexpress.com"}
             alt={"amex-image"}
             companyName={"American Express"}
             description={"Click or tap to see more"}
           />
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/applecomputers.jpg"
-            }
+            image={appleLogo}
             url={"https://tv.apple.com/us"}
             alt={"apple-image"}
             companyName={"Apple Inc."}
             description={"Click or tap to see more"}
           />
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/dh.jpg"
-            }
+            image={dhLogo}
             url={"https://digitalharmonic.com"}
             alt={"dh-image"}
             companyName={"Digital Harmonic"}
             description={"Click or tap to see more"}
           />
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/vertex.jpeg"
-            }
+            image={vertexLogo}
             url={"https://vertexinc.com"}
             alt={"vertex-image"}
             companyName={"Vertex"}
             description={"Click or tap to see more"}
           />
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/cardconnect.jpeg"
-            }
+            image={ccLogo}
             url={"https://cardconnect.com"}
             alt={"cardconnect-image"}
             companyName={"Card Connect"}
             description={"Click or tap to see more"}
           />
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/comcast.jpeg"
-            }
+            image={comcastLogo}
             url={"https://corporate.comcast.com"}
             alt={"comcast-image"}
             companyName={"Comcast"}
             description={"Click or tap to see more"}
           />
           <Card
-            image={
-              "https://websitebuckethectormorenogomez.s3.us-east-2.amazonaws.com/hexagonusfederal.jpeg"
-            }
+            image={hexagonLogo}
             url={"https://hexagon.com"}
             alt={"hexagon-image"}
             companyName={"Hexagon U.S. Federal"}
