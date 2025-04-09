@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import ChangeBrightness from "./ChangeBrightness";
 import Card from "./Card";
 import amexLogo from "../images/amex.png";
 import appleLogo from "../images/applecomputers.jpg";
@@ -26,6 +27,7 @@ class Companies extends React.PureComponent {
     return (
       <div className="Cards">
         <div className="FlexColumn">
+          <ChangeBrightness />
           <button
             type="button"
             className="BackButtonQandA"
@@ -108,4 +110,10 @@ class Companies extends React.PureComponent {
   }
 }
 
-export default withRouter(connect(null, null)(Companies));
+function mapStateToProps(state) {
+  return {
+    brightnessValue: state.exampleReducer.brightness,
+  };
+}
+
+export default withRouter(connect(mapStateToProps, null)(Companies));

@@ -117,7 +117,6 @@ i {
   text-align: center;
   width: 75%;
   border-radius: 5px;
-  background: white;
   font-family: "Catamaran";
   font-weight: 250;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
@@ -125,9 +124,7 @@ i {
 }
 
 .HeroQAndA {
-  background: white;
   overflow-x: hidden;
-  color: black;
   height: 100vh;
 }
 
@@ -211,4 +208,17 @@ i {
     background-color: white;
     color: black;
   }
+}
+
+.BrightnessImageStyle {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  align-self: start;
+  border-radius: 20px;
+}
+
+#ParagraphIDQABorder {
+  border: 1px solid white;
+  border-radius: 20px;
 }

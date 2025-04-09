@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
+import ChangeBrightness from "./ChangeBrightness";
 
 class QandA extends React.PureComponent {
   constructor(props) {
@@ -17,9 +18,12 @@ class QandA extends React.PureComponent {
   };
 
   render() {
+    const { brightnessValue } = this.props;
+
     return (
       <div className="HeroQAndA">
         <div className="FlexColumn">
+          <ChangeBrightness />
           <button
             type="button"
             className="BackButtonQandA"
@@ -34,7 +38,10 @@ class QandA extends React.PureComponent {
           >
             Q and A
           </h1>
-          <div className="ParagraphIDQandA">
+          <div
+            className="ParagraphIDQandA"
+            id={brightnessValue ? "ParagraphIDQABorder" : null}
+          >
             <h3>
               Question: Can you explain what is Full-Stack Software Engineering
               in one paragraph?
@@ -52,7 +59,10 @@ class QandA extends React.PureComponent {
             </p>
           </div>
 
-          <div className="ParagraphIDQandA">
+          <div
+            className="ParagraphIDQandA"
+            id={brightnessValue ? "ParagraphIDQABorder" : null}
+          >
             <h3>
               {" "}
               Question: Why do I choose React JS over Vue JS, Angular 18, or
@@ -67,7 +77,10 @@ class QandA extends React.PureComponent {
             </p>
           </div>
 
-          <div className="ParagraphIDQandA">
+          <div
+            className="ParagraphIDQandA"
+            id={brightnessValue ? "ParagraphIDQABorder" : null}
+          >
             <h3>
               Question: Why do I choose Node JS over Java Spring Boot and what
               are the advantages of choosing Node JS as a Back-End?{" "}
@@ -81,7 +94,10 @@ class QandA extends React.PureComponent {
             </p>
           </div>
 
-          <div className="ParagraphIDQandA">
+          <div
+            className="ParagraphIDQandA"
+            id={brightnessValue ? "ParagraphIDQABorder" : null}
+          >
             <h3>
               {" "}
               Question: What is your recommendation for cloud based database
@@ -108,7 +124,10 @@ class QandA extends React.PureComponent {
             </p>
           </div>
 
-          <div className="ParagraphIDQandA">
+          <div
+            className="ParagraphIDQandA"
+            id={brightnessValue ? "ParagraphIDQABorder" : null}
+          >
             <h3>
               Question: How do you test potential candidates for UI Development
               or Back-End Development?
@@ -128,4 +147,8 @@ class QandA extends React.PureComponent {
   }
 }
 
-export default withRouter(connect(null, null)(QandA));
+function mapStateToProps(state) {
+  return { brightnessValue: state.exampleReducer.brightness };
+}
+
+export default withRouter(connect(mapStateToProps, null)(QandA));

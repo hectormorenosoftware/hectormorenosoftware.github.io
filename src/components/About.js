@@ -1,6 +1,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import ChangeBrightness from "./ChangeBrightness";
+
 import "./About.css";
 
 class About extends React.PureComponent {
@@ -16,6 +18,7 @@ class About extends React.PureComponent {
   render() {
     return (
       <div className="SectionGroup">
+        <ChangeBrightness />
         <button
           type="button"
           className="BackButtonQandA"

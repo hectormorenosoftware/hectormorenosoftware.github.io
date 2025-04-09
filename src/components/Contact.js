@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import ChangeBrightness from "./ChangeBrightness";
 import "./Contact.css";
 
 class Contact extends React.PureComponent {
@@ -39,6 +40,7 @@ class Contact extends React.PureComponent {
   render() {
     return (
       <div className="ContactGroup">
+        <ChangeBrightness />
         <button
           type="button"
           className="BackButtonQandA"

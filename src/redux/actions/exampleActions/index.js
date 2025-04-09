@@ -1,5 +1,16 @@
-import { GET_DATA, GET_DATA_SUCCESS, GET_DATA_ERROR } from "../../types";
+import {
+  GET_DATA,
+  GET_DATA_SUCCESS,
+  GET_DATA_ERROR,
+  CHANGE_BRIGHTNESS,
+} from "../../types";
 import { getAPIMOCKDATA } from "../../api/api";
+
+export function changeBrightnessForUI() {
+  return {
+    type: CHANGE_BRIGHTNESS,
+  };
+}
 
 export function getDataThunk() {
   return async function (dispatch) {
