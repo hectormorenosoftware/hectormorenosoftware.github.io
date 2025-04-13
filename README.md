@@ -9,4 +9,4 @@ npm run build
 
 You can take a look at the website live in the internet by clicking the url's below.
 
-https://clever-bavarois-7eda7d.netlify.app/#/
+https://resilient-nougat-5de019.netlify.app/#/
