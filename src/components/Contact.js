@@ -12,7 +12,7 @@ class Contact extends React.PureComponent {
 
   openLinkedIn = () => {
     return window.open(
-      "https://www.linkedin.com/in/hector-moreno-93200728a/",
+      "https://www.linkedin.com/in/hector-morenogomez-93200728a/",
       "_blank"
     );
   };
@@ -96,7 +96,7 @@ class Contact extends React.PureComponent {
         </div>
         <div className="CopyRightGroup">
           {" "}
-          <p>&copy; Hector Moreno's Portfolio Website </p>
+          <p>&copy; Hector MorenoGomez's Portfolio Website </p>
         </div>
       </div>
     );

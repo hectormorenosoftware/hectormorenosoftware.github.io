@@ -13,7 +13,7 @@ class Loading extends React.PureComponent {
     return (
       <div className="Hero">
         <div className="HeroGroup" id="HeroGroupID">
-          <p>Please wait....</p>
+          <p>Please wait.......</p>
         </div>
       </div>
     );
