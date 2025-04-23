@@ -34,14 +34,14 @@ class IndexPage extends React.PureComponent {
         <div className="Hero" style={{ height: "100vh", overflowY: "hidden" }}>
           <div className="HeroGroup" style={{ height: "100vh" }}>
             <h1>Welcome!</h1>
-            <p style={{ animationDelay: "1.2s" }}>
+            <p style={{ animationDelay: "1s" }}>
               Please tap or click on the navbar to see more
             </p>
             <button
               type="button"
               className="ContactMeButton"
               onClick={this.routeToCompanies}
-              style={{ animationDelay: "1.8s" }}
+              style={{ animationDelay: "1.3s" }}
             >
               Learn More
             </button>
