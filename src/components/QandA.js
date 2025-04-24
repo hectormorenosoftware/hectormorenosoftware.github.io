@@ -42,20 +42,11 @@ class QandA extends React.PureComponent {
             className="ParagraphIDQandA"
             id={brightnessValue ? "ParagraphIDQABorder" : null}
           >
-            <h3>
-              Question: Can you explain what is Full-Stack Software Engineering
-              in one paragraph?
-            </h3>
+            <h3>Question: Do you have a college degree or transcript?</h3>
             <p>
-              My answer: The job of a "server" is to "serve" "JSON" data to the
-              "UI" and the "UI" code to the user. The so called "UI" which is a
-              website that expects "data" which is always in JSON format, this
-              JSON is saved in a so called "database" which can be a SQL, MySQL,
-              Mongo DB, PostgreSQL, or any cloud database. The so called
-              "server" reads the "database" and formats the data into "JSON"
-              format and sends it to the "UI", there are many kinds of servers,
-              there are .NET, Java Spring Boot, and Node JS servers and their
-              job is always the same.
+              My answer: Yes, I do. I graduated from the Univeristy of Texas at
+              Arlington with a B.S. in Computer Science which is my major and my
+              minor is in Computer Science. I do have the transcript with me.
             </p>
           </div>
 
