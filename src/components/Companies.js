@@ -112,7 +112,7 @@ class Companies extends React.PureComponent {
 
 function mapStateToProps(state) {
   return {
-    brightnessValue: state.exampleReducer.brightness,
+    brightnessValue: state.universalReducer.brightness,
   };
 }
 

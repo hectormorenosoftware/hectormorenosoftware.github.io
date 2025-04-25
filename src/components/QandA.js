@@ -74,7 +74,7 @@ class QandA extends React.PureComponent {
 }
 
 function mapStateToProps(state) {
-  return { brightnessValue: state.exampleReducer.brightness };
+  return { brightnessValue: state.universalReducer.brightness };
 }
 
 export default withRouter(connect(mapStateToProps, null)(QandA));

@@ -1,33 +1,14 @@
 import React from "react";
-import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import Loading from "./Loading";
 import Header from "./HeaderSection";
-import { getDataThunk } from "../redux/actions/exampleActions";
 
 class IndexPage extends React.PureComponent {
-  componentDidMount() {
-    const { data } = this.props;
-
-    if (data.length === 0) {
-      return this.props.getDataIndexPage();
-    }
-
-    return null;
-  }
-
   routeToCompanies = () => {
     this.props.history.push("/companies");
   };
 
   render() {
-    const { loading } = this.props;
-
-    if (loading === true) {
-      return <Loading />;
-    }
-
     return (
       <div>
         <Header />
@@ -52,17 +33,4 @@ class IndexPage extends React.PureComponent {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    data: state.exampleReducer.data,
-    loading: state.exampleReducer.loading,
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return { getDataIndexPage: bindActionCreators(getDataThunk, dispatch) };
-}
-
-export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(IndexPage)
-);
+export default withRouter(connect(null, null)(IndexPage));

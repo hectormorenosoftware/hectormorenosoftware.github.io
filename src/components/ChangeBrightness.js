@@ -2,7 +2,7 @@ import React from "react";
 import { bindActionCreators } from "redux";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { changeBrightnessForUI } from "../redux/actions/exampleActions";
+import { changeBrightnessForUI } from "../redux/actions/universalActions";
 import BrightnessImage from "../images/sun.png";
 
 class ChangeBrightness extends React.PureComponent {
@@ -40,7 +40,7 @@ class ChangeBrightness extends React.PureComponent {
 
 function mapStateToProps(state) {
   return {
-    brightness: state.exampleReducer.brightness,
+    brightness: state.universalReducer.brightness,
   };
 }
 
