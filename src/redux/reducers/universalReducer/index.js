@@ -1,7 +1,7 @@
 import { CHANGE_BRIGHTNESS } from "../../types";
 
 const INTIAL_STATE = {
-  brightness: true,
+  brightness: false,
 };
 
 function universalReducer(state = INTIAL_STATE, action) {
