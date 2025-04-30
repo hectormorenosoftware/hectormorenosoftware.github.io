@@ -29,15 +29,15 @@ class About extends React.PureComponent {
         <div className="SectionTitleGroup">
           <h3 className="SectionTitle">About</h3>
           <p className="SectionText">
-            Hector MorenoGomez is a Full-Stack Software Engineer with over 6
-            years of experience that specializes in HTML5, CSS3, SCSS,
-            JavaScript, JSX, React JS, React Native, Redux, Node JS, Express JS,
-            AWS, MySQL, PostgreSQL, and Mongo DB. He is a Computer Science
-            graduate from the University of Texas at Arlington and the
-            Full-Stack Software Engineer that architected, developed, and
-            designed Apple TV+ and Paramount+. The "Moreno" family helped
-            establish the Confederacy and "served" in the Civil War in the
-            Confederacy, Hector MorenoGomez is not racist though.
+            Hector is a Full-Stack Software Engineer with over 6 years of
+            experience that specializes in HTML5, CSS3, SCSS, JavaScript, JSX,
+            React JS, React Native, Redux, Node JS, Express JS, AWS, MySQL,
+            PostgreSQL, and Mongo DB. He is a Computer Science graduate from the
+            University of Texas at Arlington and the Full-Stack Software
+            Engineer that architected, developed, and designed Apple TV+ and
+            Paramount+. The "Moreno" family helped establish the Confederacy and
+            "served" in the Civil War in the Confederacy and in the American
+            Revolutionary War.
           </p>
         </div>
       </div>
