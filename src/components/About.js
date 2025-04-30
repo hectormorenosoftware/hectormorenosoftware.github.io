@@ -35,9 +35,8 @@ class About extends React.PureComponent {
             PostgreSQL, and Mongo DB. He is a Computer Science graduate from the
             University of Texas at Arlington and the Full-Stack Software
             Engineer that architected, developed, and designed Apple TV+ and
-            Paramount+. The Moreno family helped establish the Confederacy and
-            served in the Civil War in the Confederacy and in the American
-            Revolutionary War.
+            Paramount+. The Moreno family served in the Civil War in the
+            Confederacy and also served in the American Revolutionary War.
           </p>
         </div>
       </div>
