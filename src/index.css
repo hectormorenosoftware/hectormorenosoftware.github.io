@@ -210,8 +210,9 @@ i {
   font-family: "Lato";
 
   &:hover {
-    background-color: white;
+    background-color: #ffff00;
     color: black;
+    border: 1px solid black;
   }
 }
 
