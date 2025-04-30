@@ -9,7 +9,7 @@ class Header extends React.PureComponent {
     return history.push("/contact");
   };
 
-  goToQandAPage = () => {
+  goToQuestionsPage = () => {
     const { history } = this.props;
 
     return history.push("/questions");
@@ -37,7 +37,7 @@ class Header extends React.PureComponent {
           <a onClick={this.goToCompaniesPage}>Companies</a>
           <a onClick={this.goToAbout}>About</a>
           <a onClick={this.goToContact}>Contact</a>
-          <a onClick={this.goToQandAPage}>Q and A</a>
+          <a onClick={this.goToQuestionsPage}>Questions</a>
         </div>
       </div>
     );
