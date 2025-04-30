@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import ChangeBrightness from "./ChangeBrightness";
 
-class QandA extends React.PureComponent {
+class Questions extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {};
@@ -36,7 +36,7 @@ class QandA extends React.PureComponent {
               fontWeight: "350",
             }}
           >
-            Q and A
+            Questions
           </h1>
           <div
             className="ParagraphIDQandA"
@@ -77,4 +77,4 @@ function mapStateToProps(state) {
   return { brightnessValue: state.universalReducer.brightness };
 }
 
-export default withRouter(connect(mapStateToProps, null)(QandA));
+export default withRouter(connect(mapStateToProps, null)(Questions));

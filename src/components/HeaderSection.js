@@ -12,12 +12,12 @@ class Header extends React.PureComponent {
   goToQandAPage = () => {
     const { history } = this.props;
 
-    return history.push("/QandA");
+    return history.push("/questions");
   };
 
   goToCompaniesPage = () => {
     const { history } = this.props;
-    return history.push("/Companies");
+    return history.push("/companies");
   };
 
   goToAbout = () => {
