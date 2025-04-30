@@ -5,7 +5,7 @@ import Header from "./HeaderSection";
 
 class IndexPage extends React.PureComponent {
   routeToCompanies = () => {
-    this.props.history.push("/companies");
+    this.props.history.push("/contact");
   };
 
   render() {
@@ -24,7 +24,7 @@ class IndexPage extends React.PureComponent {
               onClick={this.routeToCompanies}
               style={{ animationDelay: "1.3s" }}
             >
-              Learn More
+              Contact
             </button>
           </div>
         </div>
