@@ -14,7 +14,7 @@ class IndexPage extends React.PureComponent {
         <Header />
         <div className="Hero" style={{ height: "100vh", overflowY: "hidden" }}>
           <div className="HeroGroup" style={{ height: "100vh" }}>
-            <h1>Welcome!</h1>
+            <h1>Hello!</h1>
             <p style={{ animationDelay: "1s" }}>
               Please tap or click on the navbar to see more
             </p>
