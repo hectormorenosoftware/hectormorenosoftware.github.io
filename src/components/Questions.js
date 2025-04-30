@@ -67,6 +67,13 @@ class Questions extends React.PureComponent {
               and data.
             </p>
           </div>
+          <div
+            className="ParagraphIDQand"
+            id={brightnessValue ? "ParagraphIDQABorder" : null}
+          >
+            <h3>Question: What is your hourly rate?</h3>
+            <p>$50 an hour or $95k a year.</p>
+          </div>
         </div>
       </div>
     );
