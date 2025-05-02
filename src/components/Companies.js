@@ -12,6 +12,9 @@ import comcastLogo from "../images/comcast.jpeg";
 import hexagonLogo from "../images/hexagonusfederal.jpeg";
 import travelersLogo from "../images/travelers.png";
 import paramountLogo from "../images/paramount.png";
+import expressLogo from "../images/express.jpg";
+import walmartLogo from "../images/walmartlogo.png";
+import charterLogo from "../images/charterlogo.jpg";
 
 class Companies extends React.PureComponent {
   constructor(props) {
@@ -63,6 +66,20 @@ class Companies extends React.PureComponent {
             description={"Click or tap to see more"}
           />
           <Card
+            image={charterLogo}
+            url={"https://www.spectrum.com/"}
+            alt={"charter-image"}
+            companyName={"Charter"}
+            description={"Click or tap to see more"}
+          />
+          <Card
+            image={walmartLogo}
+            url={"https://corporate.walmart.com/"}
+            alt={"walmart-image"}
+            companyName={"Walmart"}
+            description={"Click or tap to see more"}
+          />
+          <Card
             image={appleLogo}
             url={"https://tv.apple.com/us"}
             alt={"apple-image"}
@@ -81,6 +98,13 @@ class Companies extends React.PureComponent {
             url={"https://vertexinc.com"}
             alt={"vertex-image"}
             companyName={"Vertex"}
+            description={"Click or tap to see more"}
+          />
+          <Card
+            image={expressLogo}
+            url={"https://www.express.com/"}
+            alt={"express-image"}
+            companyName={"Express"}
             description={"Click or tap to see more"}
           />
           <Card
