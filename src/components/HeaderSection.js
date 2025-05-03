@@ -34,9 +34,9 @@ class Header extends React.PureComponent {
     return (
       <div className="Header">
         <div className="HeaderGroup">
+          <a onClick={this.goToContact}>Contact</a>
           <a onClick={this.goToCompaniesPage}>Companies</a>
           <a onClick={this.goToAbout}>About</a>
-          <a onClick={this.goToContact}>Contact</a>
           <a onClick={this.goToQuestionsPage}>Questions</a>
         </div>
       </div>

@@ -3,7 +3,8 @@ import { bindActionCreators } from "redux";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { changeBrightnessForUI } from "../redux/actions/universalActions";
-import BrightnessImage from "../images/sun.png";
+import BrightnessModeImage from "../images/sun.png";
+import DarkModeImage from "../images/moon.png";
 
 class ChangeBrightness extends React.PureComponent {
   constructor(props) {
@@ -28,12 +29,23 @@ class ChangeBrightness extends React.PureComponent {
     changeBright();
   };
   render() {
+    const { brightness } = this.props;
     return (
-      <img
-        className="BrightnessImageStyle"
-        src={BrightnessImage}
-        onClick={this.changeBrightnessInClass}
-      />
+      <React.Fragment>
+        {brightness ? (
+          <img
+            className="BrightnessImageStyle"
+            src={BrightnessModeImage}
+            onClick={this.changeBrightnessInClass}
+          />
+        ) : (
+          <img
+            className="BrightnessImageStyle"
+            src={DarkModeImage}
+            onClick={this.changeBrightnessInClass}
+          />
+        )}
+      </React.Fragment>
     );
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import ChangeBrightness from "./ChangeBrightness";
+import GoBackButton from "./GoBackButton";
 import Card from "./Card";
 import amexLogo from "../images/amex.png";
 import appleLogo from "../images/applecomputers.jpg";
@@ -22,84 +23,84 @@ const arrayOfCompanies = [
     url: "https://paramountplus.com",
     alt: "paramount-image",
     companyName: "Paramount+",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: travelersLogo,
     url: "https://travelers.com",
     alt: "travelers-image",
     companyName: "Travelers Insurance",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: amexLogo,
     url: "https://americanexpress.com",
     alt: "amex-image",
     companyName: "American Express",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: charterLogo,
     url: "https://www.spectrum.com/",
     alt: "charter-image",
     companyName: "Charter",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: walmartLogo,
     url: "https://corporate.walmart.com/",
     alt: "walmart-image",
     companyName: "Walmart",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: appleLogo,
-    url: "https://tv.apple.com/us",
+    url: "https://getsupport.apple.com/repair",
     alt: "apple-image",
     companyName: "Apple Inc.",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: dhLogo,
     url: "https://digitalharmonic.com",
     alt: "dh-image",
     companyName: "Digital Harmonic",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: vertexLogo,
     url: "https://vertexinc.com",
     alt: "vertex-image",
     companyName: "Vertex",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: expressLogo,
     url: "https://www.express.com/",
     alt: "express-image",
     companyName: "Express",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: ccLogo,
     url: "https://cardconnect.com",
     alt: "cardconnect-image",
     companyName: "Card Connect",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: comcastLogo,
     url: "https://corporate.comcast.com",
     alt: "comcast-image",
     companyName: "Comcast",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
   {
     image: hexagonLogo,
     url: "https://hexagon.com",
     alt: "hexagon-image",
     companyName: "Hexagon U.S. Federal",
-    description: "Click or tap to see more",
+    description: "Click or tap to see website",
   },
 ];
 
@@ -111,10 +112,6 @@ class Companies extends React.PureComponent {
       name: "",
     };
   }
-
-  pushToRoot = () => {
-    this.props.history.push("/");
-  };
 
   resetData = () => {
     this.setState({
@@ -272,13 +269,7 @@ class Companies extends React.PureComponent {
       <div className="Cards">
         <div className="FlexColumn">
           <ChangeBrightness />
-          <button
-            type="button"
-            className="BackButtonQandA"
-            onClick={this.pushToRoot}
-          >
-            Go Back
-          </button>
+          <GoBackButton />
           <h2>Companies I have contracted for</h2>
           <p style={{ textAlign: "center" }}>
             Click or tap on images to see more
@@ -296,7 +287,7 @@ class Companies extends React.PureComponent {
               type="button"
               onClick={this.resetData}
             >
-              Reset
+              Start Over
             </button>
           </div>
         </div>

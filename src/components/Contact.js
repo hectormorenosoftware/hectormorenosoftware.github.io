@@ -2,6 +2,8 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import ChangeBrightness from "./ChangeBrightness";
+import GoBackButton from "./GoBackButton";
+
 import "./Contact.css";
 
 class Contact extends React.PureComponent {
@@ -12,7 +14,7 @@ class Contact extends React.PureComponent {
 
   openLinkedIn = () => {
     return window.open(
-      "https://www.linkedin.com/in/hector-morenogomez-93200728a/",
+      "https://www.linkedin.com/in/hector-moreno-93200728a/",
       "_blank"
     );
   };
@@ -29,25 +31,11 @@ class Contact extends React.PureComponent {
     return window.open("mailto:hectormorenosoftware@gmail.com");
   };
 
-  routeToStackOverflowProfile = () => {
-    return window.open("https://stackoverflow.com/users/5167502/hjm");
-  };
-
-  goBackToRoot = () => {
-    this.props.history.push("/");
-  };
-
   render() {
     return (
       <div className="ContactGroup">
         <ChangeBrightness />
-        <button
-          type="button"
-          className="BackButtonQandA"
-          onClick={this.goBackToRoot}
-        >
-          Go Back
-        </button>
+        <GoBackButton />
         <p style={{ textAlign: "center" }}>
           Contact me by tapping or clicking on any of the icons below from 9am
           to 5pm CST.
@@ -56,19 +44,20 @@ class Contact extends React.PureComponent {
           <i
             className={
               window.innerWidth <= 375
-                ? "fa-solid fa-phone fa-1x"
-                : "fa-solid fa-phone fa-2x"
-            }
-            onClick={this.callPhoneNumber}
-          ></i>
-          <i
-            className={
-              window.innerWidth <= 375
                 ? "fa-solid fa-envelope fa-1x"
                 : "fa-solid fa-envelope fa-2x"
             }
             onClick={this.sendEmail}
           ></i>
+          <i
+            className={
+              window.innerWidth <= 375
+                ? "fa-solid fa-phone fa-1x"
+                : "fa-solid fa-phone fa-2x"
+            }
+            onClick={this.callPhoneNumber}
+          ></i>
+
           <i
             className={
               window.innerWidth <= 375
@@ -85,18 +74,10 @@ class Contact extends React.PureComponent {
             }
             onClick={this.openGithub}
           ></i>
-          <i
-            className={
-              window.innerWidth <= 375
-                ? "fa-brands fa-stack-overflow fa-1x"
-                : "fa-brands fa-stack-overflow fa-2x"
-            }
-            onClick={this.routeToStackOverflowProfile}
-          ></i>
         </div>
         <div className="CopyRightGroup">
           {" "}
-          <p>&copy; Hector MorenoGomez's Portfolio Website </p>
+          <p>&copy;2025 Portfolio Hector Moreno's</p>
         </div>
       </div>
     );

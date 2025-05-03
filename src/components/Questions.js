@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import ChangeBrightness from "./ChangeBrightness";
+import GoBackButton from "./GoBackButton";
 
 class Questions extends React.PureComponent {
   constructor(props) {
@@ -13,10 +14,6 @@ class Questions extends React.PureComponent {
     window.scrollTo(0, 0);
   }
 
-  GoBackEvent = () => {
-    this.props.history.push("/");
-  };
-
   render() {
     const { brightnessValue } = this.props;
 
@@ -24,13 +21,7 @@ class Questions extends React.PureComponent {
       <div className="HeroQAndA">
         <div className="FlexColumn">
           <ChangeBrightness />
-          <button
-            type="button"
-            className="BackButtonQandA"
-            onClick={this.GoBackEvent}
-          >
-            Go Back
-          </button>
+          <GoBackButton />
           <h1
             style={{
               fontWeight: "350",
@@ -42,11 +33,11 @@ class Questions extends React.PureComponent {
             className="ParagraphIDQandA"
             id={brightnessValue ? "ParagraphIDQABorder" : null}
           >
-            <h3>Question: Do you have a college degree or transcript?</h3>
+            <h3>Question: Do you have a college degree?</h3>
             <p>
-              My answer: Yes, I do. I graduated from the Univeristy of Texas at
+              My answer: Yes, I graduated from the University of Texas at
               Arlington with a B.S. in Computer Science which is my major and my
-              minor is in Computer Science. I do have the transcript with me.
+              minor it's in Computer Science my GPA is 4.0.
             </p>
           </div>
 
@@ -72,7 +63,7 @@ class Questions extends React.PureComponent {
             id={brightnessValue ? "ParagraphIDQABorder" : null}
           >
             <h3>Question: What is your hourly rate?</h3>
-            <p>$50 an hour or $95k a year.</p>
+            <p>My answer: $50 an hour or $95k a year.</p>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import ChangeBrightness from "./ChangeBrightness";
+import GoBackButton from "./GoBackButton";
 
 import "./About.css";
 
@@ -11,21 +12,11 @@ class About extends React.PureComponent {
     this.state = {};
   }
 
-  goBackToRoot = () => {
-    this.props.history.push("/");
-  };
-
   render() {
     return (
       <div className="SectionGroup">
         <ChangeBrightness />
-        <button
-          type="button"
-          className="BackButtonQandA"
-          onClick={this.goBackToRoot}
-        >
-          Go Back
-        </button>
+        <GoBackButton />
         <div className="SectionTitleGroup">
           <h3 className="SectionTitle">About</h3>
           <p className="SectionText">
