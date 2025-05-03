@@ -236,11 +236,12 @@ input:focus {
 .inputCompanyPage {
   width: 250px;
   height: 40px;
-  border: 1px solid black;
   font-weight: 500;
   font-size: 18px;
+  border: none;
   font-family: "Catamaran";
   border-radius: 18px;
+  box-shadow: 0 45px 85px;
 }
 
 .resetDataButtonCompanyPage {
