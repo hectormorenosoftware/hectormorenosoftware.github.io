@@ -35,6 +35,10 @@ i {
   cursor: pointer;
 }
 
+input:focus {
+  outline: none;
+}
+
 .FlexColumn {
   display: flex;
   flex-direction: column;
@@ -227,4 +231,49 @@ i {
 #ParagraphIDQABorder {
   border: 1px solid white;
   border-radius: 5px;
+}
+
+.inputCompanyPage {
+  width: 250px;
+  height: 40px;
+  border: 1px solid black;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Catamaran";
+  border-radius: 18px;
+}
+
+.resetDataButtonCompanyPage {
+  width: 150px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Lato";
+  cursor: pointer;
+  border: 0.5px solid black;
+  border-radius: 18px;
+  color: white;
+  background-color: #0a66c2;
+  margin-left: 15px;
+  transition: 0.8s;
+
+  &:hover {
+    color: #0a66c2;
+    background-color: white;
+    border: 0.5px solid #0a66c2;
+  }
+
+  @media (max-width: 700px) {
+    margin-top: 15px;
+  }
+}
+
+.flexBoxInputFieldCompanyPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 }
