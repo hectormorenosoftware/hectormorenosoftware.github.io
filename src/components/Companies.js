@@ -153,6 +153,7 @@ class Companies extends React.PureComponent {
       value === "Paramount" ||
       value === "Paramount+" ||
       value === "paramount" ||
+      value === "paramount+" ||
       value === "P" ||
       value === "p"
     ) {
@@ -183,7 +184,9 @@ class Companies extends React.PureComponent {
       value === "American Express" ||
       value === "American" ||
       value === "american" ||
-      value === "american express"
+      value === "american express" ||
+      value === "am" ||
+      value === "ame"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -206,7 +209,11 @@ class Companies extends React.PureComponent {
       value === "Walmart" ||
       value === "walmart" ||
       value === "w" ||
-      value === "W"
+      value === "W" ||
+      value === "wa" ||
+      value === "Wa" ||
+      value === "Wal" ||
+      value === "wal"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -222,7 +229,9 @@ class Companies extends React.PureComponent {
       value === "Apple Inc." ||
       value === "apple" ||
       value === "apple inc" ||
-      value === "apple inc."
+      value === "apple inc." ||
+      value === "ap" ||
+      value === "Ap"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -238,7 +247,11 @@ class Companies extends React.PureComponent {
       value === "Digital" ||
       value === "Digital Harmonic" ||
       value === "D" ||
-      value === "d"
+      value === "d" ||
+      value === "Di" ||
+      value === "di" ||
+      value === "Dig" ||
+      value === "dig"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -252,7 +265,11 @@ class Companies extends React.PureComponent {
       value === "vertex" ||
       value === "Vertex" ||
       value === "V" ||
-      value === "v"
+      value === "v" ||
+      value === "Ve" ||
+      value === "ve" ||
+      value === "Ver" ||
+      value === "ver"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -266,7 +283,11 @@ class Companies extends React.PureComponent {
       value === "express" ||
       value === "Express" ||
       value === "e" ||
-      value === "E"
+      value === "E" ||
+      value === "ex" ||
+      value === "Ex" ||
+      value === "Exp" ||
+      value === "exp"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -276,7 +297,12 @@ class Companies extends React.PureComponent {
       });
     }
 
-    if (value === "card" || value === "Card" || value === "Card Connect") {
+    if (
+      value === "card" ||
+      value === "Card" ||
+      value === "Card Connect" ||
+      value === "card connect"
+    ) {
       return this.setState({
         data: data.filter((v) => {
           return v.companyName === "Card Connect";
@@ -285,7 +311,14 @@ class Companies extends React.PureComponent {
       });
     }
 
-    if (value === "comcast" || value === "Comcast") {
+    if (
+      value === "comcast" ||
+      value === "Comcast" ||
+      value === "co" ||
+      value === "Co" ||
+      value === "Com" ||
+      value === "com"
+    ) {
       return this.setState({
         data: data.filter((v) => {
           return v.companyName === "Comcast";
@@ -298,7 +331,11 @@ class Companies extends React.PureComponent {
       value === "hexagon" ||
       value === "Hexagon" ||
       value === "h" ||
-      value === "H"
+      value === "H" ||
+      value === "he" ||
+      value === "He" ||
+      value === "hex" ||
+      value === "Hex"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -321,9 +358,9 @@ class Companies extends React.PureComponent {
         <div className="FlexColumn">
           <ChangeBrightness />
           <GoBackButton />
-          <h2>Companies I have contracted for</h2>
+          <h2>Companies</h2>
           <p style={{ textAlign: "center" }}>
-            Click or tap on images to see more
+            Click or tap on images to see website
           </p>
           <div className="flexBoxInputFieldCompanyPage">
             <input
