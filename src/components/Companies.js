@@ -124,10 +124,37 @@ class Companies extends React.PureComponent {
     const { value } = e.target;
     const { data } = this.state;
 
+    if (value === "a" || value === "A") {
+      return this.setState({
+        data: data.filter((v) => {
+          return (
+            v.companyName === "Apple Inc." ||
+            v.companyName === "American Express"
+          );
+        }),
+        name: value,
+      });
+    }
+
+    if (value === "c" || value === "C") {
+      return this.setState({
+        data: data.filter((v) => {
+          return (
+            v.companyName === "Comcast" ||
+            v.companyName === "Card Connect" ||
+            v.companyName === "Charter"
+          );
+        }),
+        name: value,
+      });
+    }
+
     if (
       value === "Paramount" ||
       value === "Paramount+" ||
-      value === "paramount"
+      value === "paramount" ||
+      value === "P" ||
+      value === "p"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -140,7 +167,9 @@ class Companies extends React.PureComponent {
     if (
       value === "Travelers" ||
       value === "Travelers Insurance" ||
-      value === "travelers"
+      value === "travelers" ||
+      value === "T" ||
+      value === "t"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -173,7 +202,12 @@ class Companies extends React.PureComponent {
       });
     }
 
-    if (value === "Walmart" || value === "walmart") {
+    if (
+      value === "Walmart" ||
+      value === "walmart" ||
+      value === "w" ||
+      value === "W"
+    ) {
       return this.setState({
         data: data.filter((v) => {
           return v.companyName === "Walmart";
@@ -202,7 +236,9 @@ class Companies extends React.PureComponent {
       value === "digital" ||
       value === "digital harmonic" ||
       value === "Digital" ||
-      value === "Digital Harmonic"
+      value === "Digital Harmonic" ||
+      value === "D" ||
+      value === "d"
     ) {
       return this.setState({
         data: data.filter((v) => {
@@ -212,7 +248,12 @@ class Companies extends React.PureComponent {
       });
     }
 
-    if (value === "vertex" || value === "Vertex") {
+    if (
+      value === "vertex" ||
+      value === "Vertex" ||
+      value === "V" ||
+      value === "v"
+    ) {
       return this.setState({
         data: data.filter((v) => {
           return v.companyName === "Vertex";
@@ -221,7 +262,12 @@ class Companies extends React.PureComponent {
       });
     }
 
-    if (value === "express" || value === "Express") {
+    if (
+      value === "express" ||
+      value === "Express" ||
+      value === "e" ||
+      value === "E"
+    ) {
       return this.setState({
         data: data.filter((v) => {
           return v.companyName === "Express";
@@ -248,7 +294,12 @@ class Companies extends React.PureComponent {
       });
     }
 
-    if (value === "hexagon" || value === "Hexagon") {
+    if (
+      value === "hexagon" ||
+      value === "Hexagon" ||
+      value === "h" ||
+      value === "H"
+    ) {
       return this.setState({
         data: data.filter((v) => {
           return v.companyName === "Hexagon U.S. Federal";
@@ -282,6 +333,7 @@ class Companies extends React.PureComponent {
               value={name}
               onChange={this.filterCompanyByName}
             />
+
             <button
               className="resetDataButtonCompanyPage"
               type="button"

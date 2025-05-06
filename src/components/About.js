@@ -22,12 +22,12 @@ class About extends React.PureComponent {
           <p className="SectionText">
             Hector is a Full-Stack Software Engineer with over 6 years of
             experience that specializes in HTML5, CSS3, SCSS, JavaScript, JSX,
-            React JS, React Native, Redux, Node JS, Express JS, AWS, MySQL,
-            PostgreSQL, and Mongo DB. He is a Computer Science graduate from the
-            University of Texas at Arlington and the Full-Stack Software
-            Engineer that architected, developed, and designed Apple TV+ and
-            Paramount+. The Moreno family served in the Civil War in the
-            Confederacy and also served in the American Revolutionary War.
+            React JS, Redux, Node JS, Express JS, AWS, MySQL, PostgreSQL, and
+            Mongo DB. He is a Computer Science graduate from the University of
+            Texas at Arlington and the Full-Stack Software Engineer that
+            architected, developed, and designed Paramount+. The Moreno family
+            served in the American Revolutionary War and in the American Civil
+            War.
           </p>
         </div>
       </div>
