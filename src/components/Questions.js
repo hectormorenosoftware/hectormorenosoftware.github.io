@@ -33,6 +33,24 @@ class Questions extends React.PureComponent {
             className="ParagraphIDQandA"
             id={brightnessValue ? "ParagraphIDQABorder" : null}
           >
+            <h3>Question: How can I verify your professional experience?</h3>
+            <p>
+              My answer: You can verify my professional experience through the
+              IRS for every year I have worked. Click &nbsp;
+              <a
+                href="https://www.irs.gov/individuals/get-transcript"
+                target="_blank"
+              >
+                here
+              </a>{" "}
+              to request Hector Moreno's tax transcripts to verify his
+              experience through the IRS(Internal Revenue Service).
+            </p>
+          </div>
+          <div
+            className="ParagraphIDQandA"
+            id={brightnessValue ? "ParagraphIDQABorder" : null}
+          >
             <h3>Question: Do you have a college degree?</h3>
             <p>
               My answer: Yes, I graduated from the University of Texas at
