@@ -66,9 +66,9 @@ class Questions extends React.PureComponent {
           >
             <h3>Question: Where do you live?</h3>
             <p>
-              My answer: I live in Laredo, Texas at the Homeless Shelter at
-              Bethany House, I would need an employer letter to get a new
-              apartment for me to start working for you.
+              My answer: I live in Laredo, Texas at the homeless shelter I would
+              need an employer letter to get a new apartment for me to start
+              working for you.
             </p>
           </div>
 
