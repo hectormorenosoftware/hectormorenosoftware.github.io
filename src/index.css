@@ -59,7 +59,7 @@ input:focus {
     opacity: 0;
     animation: HeroAnimation;
     animation-duration: 3s;
-    animation-delay: 0.1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 
@@ -241,7 +241,7 @@ input:focus {
   border: none;
   font-family: "Catamaran";
   border-radius: 18px;
-  box-shadow: 0 45px 85px;
+  box-shadow: 0 10px 25px;
 }
 
 .resetDataButtonCompanyPage {

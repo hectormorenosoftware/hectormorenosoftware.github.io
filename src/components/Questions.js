@@ -36,7 +36,7 @@ class Questions extends React.PureComponent {
             <h3>Question: How can I verify your professional experience?</h3>
             <p>
               My answer: You can verify my professional experience through the
-              IRS for every year I have worked. Click &nbsp;
+              IRS for every year I have worked. Click&nbsp;
               <a
                 href="https://www.irs.gov/individuals/get-transcript"
                 target="_blank"
@@ -55,7 +55,20 @@ class Questions extends React.PureComponent {
             <p>
               My answer: Yes, I graduated from the University of Texas at
               Arlington with a B.S. in Computer Science which is my major and my
-              minor it's in Computer Science my GPA is 4.0.
+              minor it's in Computer Science my GPA is 4.0. I do have a college
+              transcript as proof of my education.
+            </p>
+          </div>
+
+          <div
+            className="ParagraphIDQandA"
+            id={brightnessValue ? "ParagraphIDQABorder" : null}
+          >
+            <h3>Question: Where do you live?</h3>
+            <p>
+              My answer: I live in Laredo, Texas at the Homeless Shelter at
+              Bethany House, I would need an employer letter to get a new
+              apartment for me to start working for you.
             </p>
           </div>
 
