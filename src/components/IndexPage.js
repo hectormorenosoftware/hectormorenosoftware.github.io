@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import Header from "./HeaderSection";
+import SwitchPics from "./SwitchPics";
 
 class IndexPage extends React.PureComponent {
   routeToCompanies = () => {
@@ -26,6 +27,7 @@ class IndexPage extends React.PureComponent {
             >
               Contact
             </button>
+            <SwitchPics />
           </div>
         </div>
       </div>
