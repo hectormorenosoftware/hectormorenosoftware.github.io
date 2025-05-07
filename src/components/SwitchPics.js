@@ -118,7 +118,7 @@ class SwitchPics extends React.PureComponent {
   render() {
     return (
       <i
-        className="fa fa-camera"
+        className="fa fa-camera fa-2x"
         onClick={this.onCameraIconClick}
         style={{
           cursor: "pointer",
