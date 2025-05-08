@@ -19,11 +19,15 @@ class IndexPage extends React.PureComponent {
             <p style={{ animationDelay: "1s" }}>
               Please tap or click on the navbar to see more
             </p>
+            <p style={{ animationDelay: "1.3s" }}>
+              Tap or click on the icon below to change the website's background
+              image
+            </p>
             <button
               type="button"
               className="ContactMeButton"
               onClick={this.routeToCompanies}
-              style={{ animationDelay: "1.3s" }}
+              style={{ animationDelay: "1.5s" }}
             >
               Contact
             </button>

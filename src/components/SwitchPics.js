@@ -11,6 +11,8 @@ import TimeSquareSix from "../images/timesquaresix.png";
 import TimeSquareSeven from "../images/timesquareseven.png";
 import TimeSquareEight from "../images/timesquareeight.png";
 import TimeSquareTen from "../images/nyctimesquare.jpg";
+import TimeSquareEleven from "../images/timesquareeleven.png";
+import TimeSquareTwelve from "../images/timesquaretwelve.png";
 
 class SwitchPics extends React.PureComponent {
   constructor(props) {
@@ -110,6 +112,26 @@ class SwitchPics extends React.PureComponent {
       heroDiv.backgroundPosition = "center";
 
       return this.setState({
+        nameOfBackgroundImage: "TimeSquareNine",
+      });
+    }
+
+    if (nameOfBackgroundImage === "TimeSquareNine") {
+      heroDiv.background = `url(${TimeSquareEleven})`;
+      heroDiv.backgroundSize = "cover";
+      heroDiv.backgroundPosition = "center";
+
+      return this.setState({
+        nameOfBackgroundImage: "TimeSquareTen",
+      });
+    }
+
+    if (nameOfBackgroundImage === "TimeSquareTen") {
+      heroDiv.background = `url(${TimeSquareTwelve})`;
+      heroDiv.backgroundSize = "cover";
+      heroDiv.backgroundPosition = "center";
+
+      return this.setState({
         nameOfBackgroundImage: "TimeSquareOne",
       });
     }
@@ -118,7 +140,7 @@ class SwitchPics extends React.PureComponent {
   render() {
     return (
       <i
-        className="fa fa-camera fa-2x"
+        className="fa fa-exchange fa-2x"
         onClick={this.onCameraIconClick}
         style={{
           cursor: "pointer",
